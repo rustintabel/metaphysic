@@ -29,6 +29,19 @@ import java.util.*;
  * @author justin
  */
 public abstract class Asthetic {
+    //each of these produces  variations on a theme
+    //the actions of combinations of their organs 
+    //each of these has at its heart a map of switches
+    //such that combinations of the actions of mosuals of organs of the brain
+    //coordinate moduals of organs of the body to maintain life in a 
+    //closed system or nich of  the possible combinations of actions of its peers.
+    //The moduals of each of these are composed of tissues of cells
+    //variations on a theme again. The switch map can fight entropy
+    //through coordinating moduals only because its cells are so much smaller and
+    //faster. So in this way only with variations on a theme of cells composed as tissues and
+    //modular organs can cells be mapped to organs in a way that is simple enough for a brain to control.
+    //The brain body senses and again nucleous cytoplasm membrain each provide neccesary
+    //modularity by being both simple and reflecting each other.
     public Asthetic hand;
 
     public Asthetic handHumunculous;
