@@ -57,4 +57,19 @@ public abstract class Asthetic {
     public abstract void handHumunculous();
     public abstract void eye();
     public abstract void eyeHumunculous();
+    //Critique:
+    //Rapid prototyping iteration and then diminishing returns can also
+    //be interpreted as variations on a theme and knowing when the painting is done.
+    //Credit to my mom.
+    //it could be said philisophically that thoes cells which consistantly instigate 
+    //actions the consequences of which lead to a new symetry shell are godlike
+    //as Stephen Hawking says The universe must be the way it is for us to be here 
+    //asking why
+    //as food for thought consider the way fine distinctions are both streangthened by
+    //looking criticaly at variations on a theme and empowering. 
+    //this seems naturally fair
+    //this quadrant terminates every iteration it is the clean up and making judgements. 
+    //unpainting your caches 
+    //This is where the goasts of superstition mystacism are exorciced.
+    //obsession is seen then to be an inability to let go of things here.
 }
