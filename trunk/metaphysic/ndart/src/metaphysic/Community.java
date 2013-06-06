@@ -26,6 +26,6 @@ public class Community  extends RecombinationAsthetic{
     }
     public void eyeHumunculous()
     { 
-    
+        //
     }
 }
