@@ -8,7 +8,14 @@ package metaphysic;
 
  * @author justin
  */
-public class Brain extends RecombinationAsthetic{
+public class OrganismBrainAsthetic extends RecombinationAsthetic{
+    
+    
+    public Asthetic handHumunculous=new CellNucleousAsthetic();
+    public Asthetic hand=new CellMembraneAsthetic() ;
+    public Asthetic eye=new CellNucleousAsthetic();
+    public Asthetic eyeHumunculous=new CellNucleousAsthetic();
+    
     
     /** 
      * As I work I find my mind often wanders and I have trained it with the 

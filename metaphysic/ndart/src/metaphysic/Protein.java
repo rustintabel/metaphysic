@@ -8,8 +8,11 @@ package metaphysic;
  *
  * @author justin
  */
-public class Senses extends PrintMakingAsthetic{
-        public void handHumunculous()
+public class Protein   extends RecombinationAsthetic{
+    RecombinationAsthetic gene;//brain
+    ReproductionAsthetic rna;
+    PrintMakingAsthetic molecule;//role space of combinations(mirrors probability distribution function)
+    public void handHumunculous()
     {
     
     }
@@ -18,7 +21,7 @@ public class Senses extends PrintMakingAsthetic{
     
     }
     public void eye()
-    {
+    { 
     
     }
     public void eyeHumunculous()
