@@ -47,6 +47,7 @@ public abstract class Asthetic {
     public Asthetic handHumunculous;
     public Asthetic eye;
     public Asthetic eyeHumunculous;
+    
     public ArrayList<Asthetic> cells=new ArrayList<Asthetic>();
     ArrayList<Asthetic> organs=new ArrayList<Asthetic>();
     public Asthetic plus(Asthetic newOrgan){

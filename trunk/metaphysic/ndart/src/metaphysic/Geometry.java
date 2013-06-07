@@ -37,9 +37,9 @@ public class Geometry {
  
     {
         Organism human=new Organism();
-        Brain brain=new Brain();
+        OrganismBrainAsthetic brain=new OrganismBrainAsthetic();
         human.plus(brain);
-        Senses skin=new Senses();
+        OrganismSensesAsthetic skin=new OrganismSensesAsthetic();
         human.plus(skin);
         
  ///////////////////////////////////////

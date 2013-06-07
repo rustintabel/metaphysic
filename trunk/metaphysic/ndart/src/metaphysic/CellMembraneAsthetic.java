@@ -8,7 +8,13 @@ import java.util.*;
  *
  * @author justin
  */
-public class CellMembrane extends PrintMakingAsthetic{
+public class CellMembraneAsthetic extends PrintMakingAsthetic{
+    
+    public Asthetic handHumunculous=new ProteinGeneAsthetic();
+    public Asthetic hand=new ProteinGeneAsthetic();
+    public Asthetic eye=new ProteinGeneAsthetic();
+    public Asthetic eyeHumunculous=new ProteinTertiaryStructureAsthetic();
+    
     //list of consistant interactions with other cells
     //and inputs and outputs from its role space
     //mirroring combinations of actions of the organs

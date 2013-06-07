@@ -13,6 +13,13 @@ public class Organism  extends RecombinationAsthetic{
     {
     
     }
+    
+    /**
+     * Wake up:
+     * 
+     * 
+     * Security considerations:
+     */
     public void handHumunculous()
     {
     
@@ -25,6 +32,10 @@ public class Organism  extends RecombinationAsthetic{
     { 
     
     }
+    
+    /**
+     * Go to sleep:
+     */
     public void eyeHumunculous()
     { 
     
