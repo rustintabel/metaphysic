@@ -26,6 +26,7 @@ public class OrganismSensesAsthetic extends PrintMakingAsthetic{
      * don't get stuck in a rut.
      * wash hands before you eat.
      * Don't give out your passwords.
+     * Shred bank mail, carefully dispose of raw meat and medications.
      * 
      * Exit:
      * Check stove, electronics, lights, recycling and trash.
@@ -69,7 +70,17 @@ public class OrganismSensesAsthetic extends PrintMakingAsthetic{
     {}
     
     /**
-     * Fengshui: The emotional satisfaction of organization and efficancy of your personal space.
+     * Fengshui: The emotional satisfaction of organization and efficency of your personal space.
+     * 
+     * Cleanup:
+     * Recycle, clean floors, dust, dishes, toilet, sinks, fridge, stove, do dirty spots first.
+     * Rags, dish scrubber, soap, shampoo, shaving cream, laundry soap, broom, toilet paper,
+     * hand cream, razor, ironing board. 
+     * 
+     * 
+     * Sleep:
+     * Cold room, warm blanket, melatonin, candles, incense, ear plugs, brush teeth, shower,
+     * charge phone/mp3.
      * 
      */
     public void eyeHumunculous()
