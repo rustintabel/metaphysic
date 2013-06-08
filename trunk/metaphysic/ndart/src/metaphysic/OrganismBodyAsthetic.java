@@ -10,8 +10,8 @@ package metaphysic;
  */
 public class OrganismBodyAsthetic extends ReproductionAsthetic{
     
-    public Asthetic hand=new CellMembraneAsthetic() ;
-    public Asthetic handHumunculous=new CellMembraneAsthetic();
+    public Asthetic hand=new CellSurfaceAsthetic() ;
+    public Asthetic handHumunculous=new CellSurfaceAsthetic();
     public Asthetic eye=new CellNucleousAsthetic();
     public Asthetic eyeHumunculous=new CellNucleousAsthetic();
     

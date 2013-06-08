@@ -3,15 +3,19 @@
  * and open the template in the editor.
  */
 package metaphysic;
-
+import java.util.*;
 /**
  *
  * @author justin
  */
-public class Cell extends RecombinationAsthetic{
-    RecombinationAsthetic nucleous;//mirrors its role through its organs
-    ReproductionAsthetic organells;//combination space of its molecules mirroring electrons of atom
-    PrintMakingAsthetic role;//food in waste out
+public class CellSurfaceAsthetic extends PrintMakingAsthetic{
+    
+    public Asthetic handHumunculous=new ProteinGeneAsthetic();
+    public Asthetic hand=new ProteinGeneAsthetic();
+    public Asthetic eye=new ProteinGeneAsthetic();
+    public Asthetic eyeHumunculous=new ProteinTertiaryStructureAsthetic();
+    
+
     
     public void handHumunculous()
     {
@@ -22,7 +26,7 @@ public class Cell extends RecombinationAsthetic{
     
     }
     public void eye()
-    { 
+    {
     
     }
     public void eyeHumunculous()
@@ -30,4 +34,3 @@ public class Cell extends RecombinationAsthetic{
     
     }
 }
-
