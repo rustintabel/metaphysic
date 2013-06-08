@@ -34,4 +34,38 @@ package metaphysic;
  */
 public class StrongAnthropicGaliosGroup {
     
+            RecombinationAsthetic CellPeerRecombinationAsthetic;
+            ReproductionAsthetic CellPeerReproductionAsthetic;
+            PrintMakingAsthetic CellPeerPrintMakingAsthetic;
+            RecombinationAsthetic CellRecombinationAsthetic;
+            ReproductionAsthetic CellReproductionAsthetic;
+            PrintMakingAsthetic CellPrintMakingAsthetic;
+            RecombinationAsthetic CellTissueRecombinationAsthetic;
+            ReproductionAsthetic CellTissueReproductionAsthetic;
+            PrintMakingAsthetic CellTissuePrintMakingAsthetic ;
+    
+    void StrongAnthropicGaliosGroup(
+            RecombinationAsthetic CellPeerRecombinationAsthetic,
+            ReproductionAsthetic CellPeerReproductionAsthetic,
+            PrintMakingAsthetic CellPeerPrintMakingAsthetic,
+            RecombinationAsthetic CellRecombinationAsthetic,
+            ReproductionAsthetic CellReproductionAsthetic,
+            PrintMakingAsthetic CellPrintMakingAsthetic,
+            RecombinationAsthetic CellTissueRecombinationAsthetic,
+            ReproductionAsthetic CellTissueReproductionAsthetic,
+            PrintMakingAsthetic CellTissuePrintMakingAsthetic
+            )
+    {
+            this.CellPeerRecombinationAsthetic=CellPeerRecombinationAsthetic;
+            this.CellPeerReproductionAsthetic=CellPeerReproductionAsthetic;
+            this.CellPeerPrintMakingAsthetic=CellPeerPrintMakingAsthetic;
+            this.CellRecombinationAsthetic=CellRecombinationAsthetic;
+            this.CellReproductionAsthetic=CellReproductionAsthetic;
+            this.CellPrintMakingAsthetic=CellPrintMakingAsthetic;
+            this.CellTissueRecombinationAsthetic=CellTissueRecombinationAsthetic;
+            this.CellTissueReproductionAsthetic=CellTissueReproductionAsthetic;
+            this.CellTissuePrintMakingAsthetic=CellTissuePrintMakingAsthetic;
+    }
+    
+    
 }
