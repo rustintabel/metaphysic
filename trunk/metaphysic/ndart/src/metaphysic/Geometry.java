@@ -36,11 +36,7 @@ public class Geometry {
     public static void main(String[] args)
  
     {
-        Organism human=new Organism();
-        OrganismBrainAsthetic brain=new OrganismBrainAsthetic();
-        human.plus(brain);
-        OrganismSensesAsthetic skin=new OrganismSensesAsthetic();
-        human.plus(skin);
+
         
  ///////////////////////////////////////
         int dimentions=5;

@@ -8,12 +8,14 @@ package metaphysic;
  *
  * @author justin
  */
-public class Atom   extends RecombinationAsthetic{
-    //3 asthetics reflect each other the nucleous and the electrons then mirror
-    //the combinations of atoms that can combine with this one.
-    RecombinationAsthetic nucleous;//brain
-    ReproductionAsthetic electrons;//electrons
-    PrintMakingAsthetic sharedElectrons;//role
+public class OrganismPeerSurfaceAsthetic extends PrintMakingAsthetic{
+        public Asthetic handHumunculous=new ProteinGeneAsthetic();
+    public Asthetic hand=new ProteinGeneAsthetic();
+    public Asthetic eye=new ProteinGeneAsthetic();
+    public Asthetic eyeHumunculous=new ProteinTertiaryStructureAsthetic();
+    
+
+    
     public void handHumunculous()
     {
     
@@ -23,7 +25,7 @@ public class Atom   extends RecombinationAsthetic{
     
     }
     public void eye()
-    { 
+    {
     
     }
     public void eyeHumunculous()

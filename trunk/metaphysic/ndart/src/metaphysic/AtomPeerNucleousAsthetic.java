@@ -8,10 +8,14 @@ package metaphysic;
  *
  * @author justin
  */
-public class Protein   extends RecombinationAsthetic{
-    RecombinationAsthetic gene;//brain
-    ReproductionAsthetic rna;
-    PrintMakingAsthetic molecule;//role space of combinations(mirrors probability distribution function)
+public class AtomPeerNucleousAsthetic extends RecombinationAsthetic{
+        public Asthetic handHumunculous=new ProteinGeneAsthetic();
+    public Asthetic hand=new ProteinGeneAsthetic();
+    public Asthetic eye=new ProteinGeneAsthetic();
+    public Asthetic eyeHumunculous=new ProteinTertiaryStructureAsthetic();
+    
+
+    
     public void handHumunculous()
     {
     
@@ -21,7 +25,7 @@ public class Protein   extends RecombinationAsthetic{
     
     }
     public void eye()
-    { 
+    {
     
     }
     public void eyeHumunculous()
