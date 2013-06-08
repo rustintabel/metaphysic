@@ -8,8 +8,7 @@ package metaphysic;
  *
  * @author justin
  */
-public class CellNucleousAsthetic extends RecombinationAsthetic{
-    
+public class CellMembraneInformationFieldNucleousAsthetic extends RecombinationAsthetic{
     public Asthetic handHumunculous=new ProteinGeneAsthetic();
     public Asthetic hand=new ProteinGeneAsthetic();
     public Asthetic eye=new ProteinRNAAsthetic();

@@ -12,7 +12,7 @@ public class OrganismBrainAsthetic extends RecombinationAsthetic{
     
     
     public Asthetic handHumunculous=new CellNucleousAsthetic();
-    public Asthetic hand=new CellMembraneAsthetic() ;
+    public Asthetic hand=new CellSurfaceAsthetic() ;
     public Asthetic eye=new CellNucleousAsthetic();
     public Asthetic eyeHumunculous=new CellNucleousAsthetic();
     
