@@ -43,7 +43,6 @@ public abstract class Asthetic {
     //The brain body senses and again nucleous cytoplasm membrain each provide neccesary
     //modularity by being both simple and reflecting each other.
     public Asthetic hand;
-
     public Asthetic handHumunculous;
     public Asthetic eye;
     public Asthetic eyeHumunculous;

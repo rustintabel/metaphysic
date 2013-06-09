@@ -9,6 +9,7 @@ package metaphysic;
  * @author justin
  */
 public abstract class RecombinationAsthetic extends Asthetic {
+    /*
 public void readWikipedia(String[] url) {
     URL url;
     InputStream is = null;
@@ -35,4 +36,5 @@ public void readWikipedia(String[] url) {
         }
     }
 }
+*/ 
 }
