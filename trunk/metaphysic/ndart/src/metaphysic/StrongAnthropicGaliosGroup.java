@@ -108,10 +108,10 @@ public class StrongAnthropicGaliosGroup {
             this.CellPeerRecombinationAsthetic.eyeHumunculous=this.CellRecombinationAsthetic;
             
             
-            this.CellPeerReproductionAsthetic.handHumunculous=this.CellAsthetic;
-            this.CellPeerReproductionAsthetic.hand=this.CellAsthetic;
-            this.CellPeerReproductionAsthetic.eye=this.CellAsthetic;
-            this.CellPeerReproductionAsthetic.eyeHumunculous=this.CellAsthetic;           
+            this.CellPeerReproductionAsthetic.handHumunculous=this.CellReproductionAsthetic;
+            this.CellPeerReproductionAsthetic.hand=this.CellPrintMakingAsthetic;
+            this.CellPeerReproductionAsthetic.eye=this.CellReproductionAsthetic;
+            this.CellPeerReproductionAsthetic.eyeHumunculous=this.CellPrintMakingAsthetic;   
             
             
             this.CellPeerPrintMakingAsthetic.handHumunculous=this.CellPrintMakingAsthetic;
@@ -129,10 +129,10 @@ public class StrongAnthropicGaliosGroup {
             this.CellRecombinationAsthetic.eyeHumunculous=this.CellTissueRecombinationAsthetic;
             
             
-            this.CellReproductionAsthetic.handHumunculous=this.CellTissueAsthetic;
-            this.CellReproductionAsthetic.hand=this.CellTissueAsthetic;
-            this.CellReproductionAsthetic.eye=this.CellTissueAsthetic;
-            this.CellReproductionAsthetic.eyeHumunculous=this.CellTissueAsthetic;           
+            this.CellReproductionAsthetic.handHumunculous=this.CellTissuePrintMakingAsthetic;
+            this.CellReproductionAsthetic.hand=this.CellTissueReproductionAsthetic;
+            this.CellReproductionAsthetic.eye=this.CellTissueReproductionAsthetic;
+            this.CellReproductionAsthetic.eyeHumunculous=this.CellTissuePrintMakingAsthetic;  
             
             this.CellPrintMakingAsthetic.handHumunculous=this.CellTissueRecombinationAsthetic;
             this.CellPrintMakingAsthetic.hand=this.CellTissuePrintMakingAsthetic;
