@@ -101,7 +101,45 @@ public class StrongAnthropicGaliosGroup {
             
                         //Brain
             //eye for an eye
-            this.CellRecombinationAsthetic.eye=this.CellTissueRecombinationAsthetic.eye;
+            
+            this.CellPeerRecombinationAsthetic.handHumunculous=this.CellPrintMakingAsthetic;
+            this.CellPeerRecombinationAsthetic.hand=this.CellRecombinationAsthetic;
+            this.CellPeerRecombinationAsthetic.eye=this.CellReproductionAsthetic;
+            this.CellPeerRecombinationAsthetic.eyeHumunculous=this.CellRecombinationAsthetic;
+            
+            
+            this.CellPeerReproductionAsthetic.handHumunculous=this.CellAsthetic;
+            this.CellPeerReproductionAsthetic.hand=this.CellAsthetic;
+            this.CellPeerReproductionAsthetic.eye=this.CellAsthetic;
+            this.CellPeerReproductionAsthetic.eyeHumunculous=this.CellAsthetic;           
+            
+            
+            this.CellPeerPrintMakingAsthetic.handHumunculous=this.CellPrintMakingAsthetic;
+            this.CellPeerPrintMakingAsthetic.hand=this.CellRecombinationAsthetic;
+            this.CellPeerPrintMakingAsthetic.eye=this.CellPrintMakingAsthetic;
+            this.CellPeerPrintMakingAsthetic.eyeHumunculous=this.CellRecombinationAsthetic;
+            
+            
+            ////////////////////////////////////////////////////////////////////////////
+            
+            //this.CellRecombinationAsthetic.eye=this.CellTissueRecombinationAsthetic;
+            this.CellRecombinationAsthetic.handHumunculous=this.CellTissueRecombinationAsthetic;
+            this.CellRecombinationAsthetic.hand=this.CellTissueReproductionAsthetic;
+            this.CellRecombinationAsthetic.eye=this.CellTissuePrintMakingAsthetic;
+            this.CellRecombinationAsthetic.eyeHumunculous=this.CellTissueRecombinationAsthetic;
+            
+            
+            this.CellReproductionAsthetic.handHumunculous=this.CellTissueAsthetic;
+            this.CellReproductionAsthetic.hand=this.CellTissueAsthetic;
+            this.CellReproductionAsthetic.eye=this.CellTissueAsthetic;
+            this.CellReproductionAsthetic.eyeHumunculous=this.CellTissueAsthetic;           
+            
+            this.CellPrintMakingAsthetic.handHumunculous=this.CellTissueRecombinationAsthetic;
+            this.CellPrintMakingAsthetic.hand=this.CellTissuePrintMakingAsthetic;
+            this.CellPrintMakingAsthetic.eye=this.CellTissuePrintMakingAsthetic;
+            this.CellPrintMakingAsthetic.eyeHumunculous=this.CellTissueRecombinationAsthetic; 
+            
+
             
                                 /*
                     =CellRecombinationAsthetic;this.CellRecombinationAsthetic
