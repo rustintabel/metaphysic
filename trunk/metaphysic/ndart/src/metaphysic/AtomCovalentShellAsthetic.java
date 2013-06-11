@@ -8,7 +8,7 @@ package metaphysic;
  *
  * @author justin
  */
-public class AtomCovalentShellAsthetic {
+public class AtomCovalentShellAsthetic extends PrintMakingAsthetic{
     public Asthetic handHumunculous=new OrganismBrainAsthetic();
     public Asthetic hand=new OrganismSensesAsthetic() ;
     public Asthetic eye=new OrganismBrainAsthetic();
