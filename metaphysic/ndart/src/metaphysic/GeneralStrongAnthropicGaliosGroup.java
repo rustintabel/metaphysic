@@ -4,11 +4,9 @@
  */
 package metaphysic;
 
-/**
- *
- * @author justin
- */
-public class GeneralStrongAnthropicGaliosGroup {
+import java.util.ArrayList;
+
+
     /**Each layer of complexity from organisms to atoms are composed as a fractle.
     * one layer fights entropy as a sort of machien and the layer above adds
     * a governing force on the one below as it is within the tissues of the organs controled
@@ -23,4 +21,22 @@ public class GeneralStrongAnthropicGaliosGroup {
     * empathetically help each other fighting projection of their personal perspective 
     * learning each others variation on their astheic preferences to make
     * each other happy.
+    **/
+public class GeneralStrongAnthropicGaliosGroup {
+ArrayList <StrongAnthropicGaliosGroup> atoms =new ArrayList<StrongAnthropicGaliosGroup>();
+StrongAnthropicGaliosGroup Proteins = new StrongAnthropicGaliosGroup();
+StrongAnthropicGaliosGroup cells = new StrongAnthropicGaliosGroup();
+StrongAnthropicGaliosGroup organisms =new StrongAnthropicGaliosGroup();
+StrongAnthropicGaliosGroup community = new StrongAnthropicGaliosGroup();
+
+
+
+    public void GeneralStrongAnthropicGaliosGroup()
+    {
+    
+    }
+
+
+
+
 }
