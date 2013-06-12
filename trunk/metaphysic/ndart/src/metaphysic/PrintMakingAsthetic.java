@@ -8,7 +8,7 @@ import java.util.*;
  *
  * @author justin
  */
-public abstract class PrintMakingAsthetic extends Asthetic {
+public class PrintMakingAsthetic extends Asthetic {
 //this asthetic is the construction in the layer of complexity above
 //as an atom to the molecule it is in    
  //and arbitrary files list xml file for print making files

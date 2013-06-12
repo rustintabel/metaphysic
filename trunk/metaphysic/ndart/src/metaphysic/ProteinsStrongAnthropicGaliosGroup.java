@@ -32,13 +32,8 @@ public class ProteinsStrongAnthropicGaliosGroup {
     ArrayList<AtomNuclearTissueFieldAsthetic> atomNuclearTissueFieldAstheticTypes
             =new ArrayList<AtomNuclearTissueFieldAsthetic>();
     
-    public void AtomsStrongAnthropicGaliosGroup()
+    public void ProteinsStrongAnthropicGaliosGroup()
     {
-        for(int i=1;i<118;i++)
-        {
-            covalentShellTissueFeildTypes.add(new AtomCovalentShellTissueFieldAsthetic());
-            atomElectronsTissueFieldAstheticTypes.add(new  AtomElectronTissueFieldAsthetic());
-            atomNuclearTissueFieldAstheticTypes.add(new  AtomNuclearTissueFieldAsthetic());
-        }
+
     } 
 }
