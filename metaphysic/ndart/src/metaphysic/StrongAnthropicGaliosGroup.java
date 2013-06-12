@@ -4,6 +4,8 @@
  */
 package metaphysic;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author justin
@@ -33,6 +35,9 @@ package metaphysic;
  * a feild and the two are isomorphic and together form a galios group.
  */
 public class StrongAnthropicGaliosGroup {
+    
+        public ArrayList<Asthetic> specificTypes=new ArrayList<Asthetic>();
+            
     
             RecombinationAsthetic CellPeerRecombinationAsthetic;
             ReproductionAsthetic CellPeerReproductionAsthetic;
