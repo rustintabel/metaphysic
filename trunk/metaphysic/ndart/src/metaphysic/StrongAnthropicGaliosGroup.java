@@ -147,13 +147,13 @@ public class StrongAnthropicGaliosGroup {
 
             
                                 /*
-                    =CellRecombinationAsthetic;this.CellRecombinationAsthetic
-            this.CellReproductionAsthetic=CellReproductionAsthetic;
-            this.CellPrintMakingAsthetic=CellPrintMakingAsthetic;
-            
-            this.CellTissueRecombinationAsthetic=CellTissueRecombinationAsthetic;
-            this.CellTissueReproductionAsthetic=CellTissueReproductionAsthetic;
-            this.CellTissuePrintMakingAsthetic=CellTissuePrintMakingAsthetic;
+                                 * SpineStrongAnthropicSensesGaliosGroupAsthetic
+                                 * StrongAnthropicSymmetryShellGaliosGroupAsthetic
+                                 * SpineStrongAnthropicTissueFeildGaliosGroupAsthetic
+                    * 
+                    * SpineStrongAnthropicBrainSpineGaliosGroupAsthetic
+                    * SpineStrongAnthropicOrgansGaliosGroupAsthetic
+                    * SpineStrongAnthropicReceptorsGaliosGroupAsthetic
     */
     }
     
