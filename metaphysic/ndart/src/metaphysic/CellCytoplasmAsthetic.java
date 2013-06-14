@@ -5,7 +5,9 @@
 package metaphysic;
 
 /**
- *
+ *  Cells reflect molecules in the following way.
+ * A large number of very small parts like a probability distribution function can approach almost
+ * any desired shape dependant function.
  * @author justin
  */
 public class CellCytoplasmAsthetic extends ReproductionAsthetic{
