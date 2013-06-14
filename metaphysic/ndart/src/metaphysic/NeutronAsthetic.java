@@ -8,6 +8,6 @@ package metaphysic;
  *
  * @author justin
  */
-public class DownQuarkAsthetic extends RecombinationAsthetic{
+public class NeutronAsthetic extends RecombinationAsthetic{
     
 }

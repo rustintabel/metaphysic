@@ -8,6 +8,6 @@ package metaphysic;
  *
  * @author justin
  */
-public class ElectromagneticForceAsthetic extends PrintMakingAsthetic{
+public class CovalentShellAsthetic extends PrintMakingAsthetic{
     
 }

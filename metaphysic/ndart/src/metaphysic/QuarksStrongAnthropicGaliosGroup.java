@@ -25,18 +25,18 @@ public class QuarksStrongAnthropicGaliosGroup extends StrongAnthropicGaliosGroup
             NuclearProbabilityDistributionFunctionAstheticTypes
             =new ArrayList<NuclearProbabilityDistributionFunctionAsthetic>();
     
-    public ArrayList<PrintMakingAsthetic> PrintMakingAstheticTypes
-            =new ArrayList<PrintMakingAsthetic>();
-    public ArrayList<UpQuarkAshetic> UpQuarkAsheticTypes
-            =new ArrayList<UpQuarkAshetic>(); 
-    public ArrayList<DownQuarkAsthetic> DownQuarkAstheticTypes
-            =new ArrayList<DownQuarkAsthetic>();
+    public ArrayList<CovalentShellAsthetic> CovalentShellAstheticTypes
+            =new ArrayList<CovalentShellAsthetic>();
+    public ArrayList<ProtonAsthetic> ProtonAstheticTypes
+            =new ArrayList<ProtonAsthetic>(); 
+    public ArrayList<NeutronAsthetic> NeutronAstheticTypes
+            =new ArrayList<NeutronAsthetic>();
     
-    public ArrayList<ElectromagneticForceAsthetic> ElectromagneticForceAstheticTypes
-            =new ArrayList<ElectromagneticForceAsthetic>();
-    public ArrayList<PhotonAsthetic> PhotonAstheticTypes
-            =new ArrayList<PhotonAsthetic>();
-    public ArrayList<BaryonSymmetry> BaryonSymmetryTypes
-            =new ArrayList<BaryonSymmetry>();
+    public ArrayList<ElectronElectronTissueFieldAsthetic> ElectronElectronTissueFieldAstheticTypes
+            =new ArrayList<ElectronElectronTissueFieldAsthetic>();
+    public ArrayList<UpUpQuarkTissueFieldAshetic> UpUpQuarkTissueFieldAsheticTypes
+            =new ArrayList<UpUpQuarkTissueFieldAshetic>();
+    public ArrayList<DownDownQuarkTissueFeildAsthetic> DownDownQuarkTissueFeildAstheticTypes
+            =new ArrayList<DownDownQuarkTissueFeildAsthetic>();
             
 }

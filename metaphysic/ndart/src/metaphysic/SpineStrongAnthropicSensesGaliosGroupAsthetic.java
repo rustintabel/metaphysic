@@ -8,6 +8,6 @@ package metaphysic;
  *
  * @author justin
  */
-public class UpQuarkAshetic extends ReproductionAsthetic{
+public class SpineStrongAnthropicSensesGaliosGroupAsthetic  extends SpineStrongAnthropicGaliosGroupAsthetic{
     
 }
