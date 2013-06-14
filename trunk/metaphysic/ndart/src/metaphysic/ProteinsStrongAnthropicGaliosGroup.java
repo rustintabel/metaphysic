@@ -10,7 +10,7 @@ import java.util.ArrayList;
  *
  * @author justin
  */
-public class ProteinsStrongAnthropicGaliosGroup {
+public class ProteinsStrongAnthropicGaliosGroup extends StrongAnthropicGaliosGroup{
     ArrayList<ProteinPeerTertiaryStructureAsthetic> ProteinPeerTertiaryStructureAstheticTypes
             =new ArrayList<ProteinPeerTertiaryStructureAsthetic>();
     ArrayList<ProtienPeerRNAAsthetic> ProtienPeerRNAAstheticTypes
@@ -25,12 +25,7 @@ public class ProteinsStrongAnthropicGaliosGroup {
     ArrayList<ProteinGeneAsthetic> ProteinGeneAstheticTypes
             =new ArrayList<ProteinGeneAsthetic>();
     
-    ArrayList<AtomCovalentShellTissueFieldAsthetic> covalentShellTissueFeildTypes
-            =new ArrayList<AtomCovalentShellTissueFieldAsthetic>();
-    ArrayList<AtomElectronTissueFieldAsthetic> atomElectronsTissueFieldAstheticTypes
-            =new ArrayList<AtomElectronTissueFieldAsthetic>();
-    ArrayList<AtomNuclearTissueFieldAsthetic> atomNuclearTissueFieldAstheticTypes
-            =new ArrayList<AtomNuclearTissueFieldAsthetic>();
+
     
     public void ProteinsStrongAnthropicGaliosGroup()
     {
