@@ -8,7 +8,7 @@ package metaphysic;
  *
  * @author justin
  */
-public abstract class RecombinationAsthetic extends Asthetic {
+public class RecombinationAsthetic extends Asthetic {
     /*
 public void readWikipedia(String[] url) {
     URL url;
