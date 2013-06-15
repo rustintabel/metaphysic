@@ -48,6 +48,20 @@ public class StrongAnthropicGaliosGroup {
             RecombinationAsthetic CellTissueRecombinationAsthetic;
             ReproductionAsthetic CellTissueReproductionAsthetic;
             PrintMakingAsthetic CellTissuePrintMakingAsthetic ;
+            
+            XSpineStrongAnthropicSensesGaliosGroupAsthetic spineSenses
+                    =new XSpineStrongAnthropicSensesGaliosGroupAsthetic();
+            XSpineStrongAnthropicSymetryShellGaliosGroupAsthetic symetryShell
+                    =new XSpineStrongAnthropicSymetryShellGaliosGroupAsthetic();
+            XSpineStrongAnthropicTissueFeildGaliosGroupAsthetic spineTissueField
+                    =new XSpineStrongAnthropicTissueFeildGaliosGroupAsthetic();
+                   
+            YSpineStrongAnthropicBrainSpineGaliosGroupAsthetic brainSpine
+                    =new YSpineStrongAnthropicBrainSpineGaliosGroupAsthetic();
+            YSpineStrongAnthropicOrgansGaliosGroupAsthetic spineOrgans
+                    =new YSpineStrongAnthropicOrgansGaliosGroupAsthetic();
+            YSpineStrongAnthropicReceptorsGaliosGroupAsthetic spineReceptors
+                    =new YSpineStrongAnthropicReceptorsGaliosGroupAsthetic();
     
     void StrongAnthropicGaliosGroup(
             RecombinationAsthetic CellPeerRecombinationAsthetic,
@@ -75,6 +89,38 @@ public class StrongAnthropicGaliosGroup {
             this.CellTissueReproductionAsthetic=CellTissueReproductionAsthetic;
             this.CellTissuePrintMakingAsthetic=CellTissuePrintMakingAsthetic;
             
+            
+            //x spines
+             
+             
+             spineSenses.superPrint=CellPeerPrintMakingAsthetic;
+             spineSenses.reproduction=CellPeerReproductionAsthetic;
+             spineSenses.superRecombination=CellPeerRecombinationAsthetic;
+             
+             symetryShell.superPrint=CellPrintMakingAsthetic;
+             symetryShell.reproduction=CellReproductionAsthetic;
+             symetryShell.superRecombination=CellRecombinationAsthetic;
+             
+             
+             spineTissueField.superPrint=CellTissuePrintMakingAsthetic;
+             spineTissueField.reproduction=CellTissueReproductionAsthetic;
+             spineTissueField.superRecombination=CellTissueRecombinationAsthetic;
+             
+             
+             //y spines
+             brainSpine.print=CellPeerRecombinationAsthetic;
+             brainSpine.reproduction=CellRecombinationAsthetic;
+             brainSpine.recombination=CellRecombinationAsthetic;
+             
+             spineOrgans.print=CellPeerReproductionAsthetic;
+             spineOrgans.recombination=CellReproductionAsthetic;
+             spineOrgans.reproduction=CellTissueReproductionAsthetic;
+             
+             spineReceptors.print=CellPeerPrintMakingAsthetic;
+             spineReceptors.recombination=CellPrintMakingAsthetic;
+             spineReceptors.reproduction=CellTissuePrintMakingAsthetic;
+                     /*
+                   
     //Of all the quadrants of all the three fundamental asthetics mirrored at each symetry shell.
     //two phenomina are repeated. Analogsly they are hands and eyes. occupying the same eight
     //quadrants. And a map can be made of this. This is the composistion of mebrane information 
@@ -147,6 +193,23 @@ public class StrongAnthropicGaliosGroup {
 
             
                                 /*
+                                 * 
+                                 * 
+        *             RecombinationAsthetic CellPeerRecombinationAsthetic;
+            ReproductionAsthetic CellPeerReproductionAsthetic;
+            PrintMakingAsthetic CellPeerPrintMakingAsthetic;
+            * 
+            RecombinationAsthetic CellRecombinationAsthetic;
+            ReproductionAsthetic CellReproductionAsthetic;
+            PrintMakingAsthetic CellPrintMakingAsthetic;
+            * 
+            RecombinationAsthetic CellTissueRecombinationAsthetic;
+            ReproductionAsthetic CellTissueReproductionAsthetic;
+            PrintMakingAsthetic CellTissuePrintMakingAsthetic ;
+                                 * 
+                                 * 
+                                 * 
+                                 * 
                                  * SpineStrongAnthropicSensesGaliosGroupAsthetic
                                  * StrongAnthropicSymmetryShellGaliosGroupAsthetic
                                  * SpineStrongAnthropicTissueFeildGaliosGroupAsthetic

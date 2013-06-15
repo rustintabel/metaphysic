@@ -8,6 +8,6 @@ package metaphysic;
  *
  * @author justin
  */
-public abstract class ReproductionAsthetic extends Asthetic {
+public class ReproductionAsthetic extends Asthetic {
 
 }

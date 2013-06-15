@@ -35,9 +35,13 @@ public class Geometry {
  
     public static void main(String[] args)
     {
-        GeneralStrongAnthropicGaliosGroup metaPhysic = new GeneralStrongAnthropicGaliosGroup();
-        LifestyleProjectionOfStrongAnthropicGaliosGroup dayPlanner=new LifestyleProjectionOfStrongAnthropicGaliosGroup();
+        GeneralStrongAnthropicGaliosGroup metaPhysic = 
+                new GeneralStrongAnthropicGaliosGroup();
+        LifestyleProjectionOfStrongAnthropicGaliosGroup dayPlanner=
+                new LifestyleProjectionOfStrongAnthropicGaliosGroup();
         
+        YSpineStrongAnthropicBrainSpineGaliosGroupAsthetic theSpine=
+                new YSpineStrongAnthropicBrainSpineGaliosGroupAsthetic();
  ///////////////////////////////////////
         int dimentions=5;
  

@@ -5,11 +5,15 @@
 package metaphysic;
 
 /**
- *double shift flip from recombination to printmaking through reproduction
+ *
  * @author justin
  */
 public class SpineStrongAnthropicGaliosGroupAsthetic {
-    RecombinationAsthetic recombination;
-    ReproductionAsthetic reproduction;
-    PrintMakingAsthetic print;
+    public PrintMakingAsthetic superPrint=new PrintMakingAsthetic();
+    
+    public RecombinationAsthetic superHeart=new RecombinationAsthetic();
+    public ReproductionAsthetic superHand=new ReproductionAsthetic();
+    public PrintMakingAsthetic superFoot=new PrintMakingAsthetic();
+    
+
 }

@@ -8,6 +8,9 @@ package metaphysic;
  *
  * @author justin
  */
-public class OrganismStrongAnthropicGaliosGroup {
-    
+public class OrganismStrongAnthropicGaliosGroup extends StrongAnthropicGaliosGroup{
+    public void OrganismStrongAnthropicGaliosGroup()
+    {
+
+    }
 }
