@@ -37,11 +37,25 @@ public class Geometry {
     {
         GeneralStrongAnthropicGaliosGroup metaPhysic = 
                 new GeneralStrongAnthropicGaliosGroup();
-        LifestyleProjectionOfStrongAnthropicGaliosGroup dayPlanner=
-                new LifestyleProjectionOfStrongAnthropicGaliosGroup();
+        int screenHeight=100;
+ 
+        int screenWidth=100;
+        BufferedImage fractle= new BufferedImage(screenHeight, screenWidth, BufferedImage.TYPE_INT_RGB);
+        Graphics2D graphics=fractle.createGraphics();
+        Color c2=new Color(0,128,255);
+ 
+        graphics.setBackground(c2);
+        //graphics.drawLine(screenWidth, screenWidth, screenWidth, screenWidth);
+        try{
+            ImageIO.write(fractle,"jpg",new File("Fractle.jpg"));
+        }catch(IOException i){
         
-        YSpineStrongAnthropicBrainSpineGaliosGroupAsthetic theSpine=
-                new YSpineStrongAnthropicBrainSpineGaliosGroupAsthetic();
+        }
+       // LifestyleProjectionOfStrongAnthropicGaliosGroup dayPlanner=
+         //       new LifestyleProjectionOfStrongAnthropicGaliosGroup();
+        
+       // YSpineStrongAnthropicBrainSpineGaliosGroupAsthetic theSpine=
+         //       new YSpineStrongAnthropicBrainSpineGaliosGroupAsthetic();
  ///////////////////////////////////////
         int dimentions=5;
  

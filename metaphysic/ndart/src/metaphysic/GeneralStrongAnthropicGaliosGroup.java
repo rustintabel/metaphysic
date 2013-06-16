@@ -22,21 +22,22 @@ import java.util.ArrayList;
     * learning each others variation on their astheic preferences to make
     * each other happy.
     **/
-public class GeneralStrongAnthropicGaliosGroup {
-ArrayList <StrongAnthropicGaliosGroup> atoms =new ArrayList<StrongAnthropicGaliosGroup>();
-StrongAnthropicGaliosGroup Proteins = new StrongAnthropicGaliosGroup();
-StrongAnthropicGaliosGroup cells = new StrongAnthropicGaliosGroup();
-StrongAnthropicGaliosGroup organisms =new StrongAnthropicGaliosGroup();
-StrongAnthropicGaliosGroup community = new StrongAnthropicGaliosGroup();
-
-
+public class GeneralStrongAnthropicGaliosGroup 
+{
+public CommunityStrongAnthropicGaliosGroup community = new CommunityStrongAnthropicGaliosGroup(); 
+public OrganismStrongAnthropicGaliosGroup organisms =new OrganismStrongAnthropicGaliosGroup();
+public CellsStrongAnthropicGaliosGroup cells = new CellsStrongAnthropicGaliosGroup();
+public ProteinsStrongAnthropicGaliosGroup proteins = new ProteinsStrongAnthropicGaliosGroup();
+public AtomsStrongAnthropicGaliosGroup atoms =new AtomsStrongAnthropicGaliosGroup();
+public QuarksStrongAnthropicGaliosGroup quarks=new QuarksStrongAnthropicGaliosGroup();
 
     public void GeneralStrongAnthropicGaliosGroup()
     {
-    
+        atoms.multiply(quarks);
+        proteins.multiply(atoms);
+        cells.multiply(proteins);
+        organisms.multiply(cells);
+        community.multiply(organisms);
     }
-
-
-
-
+    
 }

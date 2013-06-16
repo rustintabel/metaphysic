@@ -8,7 +8,7 @@ import java.util.ArrayList;
  *
  * @author justin
  */
-public class AtomsStrongAnthropicGaliosGroup {
+public class AtomsStrongAnthropicGaliosGroup extends StrongAnthropicGaliosGroup{
     
       
     
@@ -35,15 +35,21 @@ public class AtomsStrongAnthropicGaliosGroup {
     
     public void AtomsStrongAnthropicGaliosGroup()
     {
+        
+        
+        symetryShell.handPhenomina.add(this.CellTissueRecombinationAsthetic);//proton
+        symetryShell.handPhenomina.add(this.CellTissueReproductionAsthetic);//electron
 
-        StrongAnthropicGaliosGroup strongAnthropicGaliosGroup=
-                new StrongAnthropicGaliosGroup();
+        symetryShell.eyePhenomina.add(this.CellTissuePrintMakingAsthetic);//covalent shell
+        symetryShell.eyePhenomina.add(this.CellTissueReproductionAsthetic);//electrons
+        
         for(int i=1;i<118;i++)
         {
-            AtomCovalentShellTissueFieldAsthetic covalentShell=new AtomCovalentShellTissueFieldAsthetic();
-            covalentShellTissueFeildTypes.add(covalentShell);
+            
+            covalentShellTissueFeildTypes.add(new AtomCovalentShellTissueFieldAsthetic());
             atomElectronsTissueFieldAstheticTypes.add(new  AtomElectronTissueFieldAsthetic());
             atomNuclearTissueFieldAstheticTypes.add(new  AtomNuclearTissueFieldAsthetic());
+            
         }
     
     }
