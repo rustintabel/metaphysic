@@ -8,6 +8,7 @@ package metaphysic;
  *
  * @author justin
  */
-public class YSpineStrongAnthropicOrgansGaliosGroupAsthetic  extends SpineStrongAnthropicGaliosGroupAsthetic{
-    
+public class YSpineStrongAnthropicOrgansGaliosGroupAsthetic  
+extends SpineStrongAnthropicGaliosGroupAsthetic{
+    //foot hand foot hand
 }

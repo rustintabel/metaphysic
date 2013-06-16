@@ -29,6 +29,10 @@ public class ProteinsStrongAnthropicGaliosGroup extends StrongAnthropicGaliosGro
     
     public void ProteinsStrongAnthropicGaliosGroup()
     {
+        symetryShell.handPhenomina.add(this.CellRecombinationAsthetic);//neutron
+        symetryShell.handPhenomina.add(this.CellReproductionAsthetic);//proton
 
+        symetryShell.eyePhenomina.add(this.CellPrintMakingAsthetic);//covalent shell
+        symetryShell.eyePhenomina.add(this.CellReproductionAsthetic);//protons 
     } 
 }

@@ -36,31 +36,34 @@ import java.util.ArrayList;
  */
 public class StrongAnthropicGaliosGroup {
     
-        public ArrayList<Asthetic> specificTypes=new ArrayList<Asthetic>();
+        public StrongAnthropicGaliosGroup ceiling=new StrongAnthropicGaliosGroup();
+
             
     
-            RecombinationAsthetic CellPeerRecombinationAsthetic;
-            ReproductionAsthetic CellPeerReproductionAsthetic;
-            PrintMakingAsthetic CellPeerPrintMakingAsthetic;
-            RecombinationAsthetic CellRecombinationAsthetic;
-            ReproductionAsthetic CellReproductionAsthetic;
-            PrintMakingAsthetic CellPrintMakingAsthetic;
-            RecombinationAsthetic CellTissueRecombinationAsthetic;
-            ReproductionAsthetic CellTissueReproductionAsthetic;
-            PrintMakingAsthetic CellTissuePrintMakingAsthetic ;
+            public RecombinationAsthetic CellPeerRecombinationAsthetic;
+            public ReproductionAsthetic CellPeerReproductionAsthetic;
+            public PrintMakingAsthetic CellPeerPrintMakingAsthetic;
             
-            XSpineStrongAnthropicSensesGaliosGroupAsthetic spineSenses
+            public RecombinationAsthetic CellRecombinationAsthetic;
+            public ReproductionAsthetic CellReproductionAsthetic;
+            public PrintMakingAsthetic CellPrintMakingAsthetic;
+            
+            public RecombinationAsthetic CellTissueRecombinationAsthetic;
+            public ReproductionAsthetic CellTissueReproductionAsthetic;
+            public PrintMakingAsthetic CellTissuePrintMakingAsthetic ;
+            
+            public XSpineStrongAnthropicSensesGaliosGroupAsthetic spineSenses
                     =new XSpineStrongAnthropicSensesGaliosGroupAsthetic();
-            XSpineStrongAnthropicSymetryShellGaliosGroupAsthetic symetryShell
+            public XSpineStrongAnthropicSymetryShellGaliosGroupAsthetic symetryShell
                     =new XSpineStrongAnthropicSymetryShellGaliosGroupAsthetic();
-            XSpineStrongAnthropicTissueFeildGaliosGroupAsthetic spineTissueField
+            public XSpineStrongAnthropicTissueFeildGaliosGroupAsthetic spineTissueField
                     =new XSpineStrongAnthropicTissueFeildGaliosGroupAsthetic();
                    
-            YSpineStrongAnthropicBrainSpineGaliosGroupAsthetic brainSpine
+            public YSpineStrongAnthropicBrainSpineGaliosGroupAsthetic brainSpine
                     =new YSpineStrongAnthropicBrainSpineGaliosGroupAsthetic();
-            YSpineStrongAnthropicOrgansGaliosGroupAsthetic spineOrgans
+            public YSpineStrongAnthropicOrgansGaliosGroupAsthetic spineOrgans
                     =new YSpineStrongAnthropicOrgansGaliosGroupAsthetic();
-            YSpineStrongAnthropicReceptorsGaliosGroupAsthetic spineReceptors
+            public YSpineStrongAnthropicReceptorsGaliosGroupAsthetic spineReceptors
                     =new YSpineStrongAnthropicReceptorsGaliosGroupAsthetic();
     
     void StrongAnthropicGaliosGroup(
@@ -90,36 +93,7 @@ public class StrongAnthropicGaliosGroup {
             this.CellTissuePrintMakingAsthetic=CellTissuePrintMakingAsthetic;
             
             
-            //x spines
-             
-             
-             spineSenses.superPrint=CellPeerPrintMakingAsthetic;
-             spineSenses.reproduction=CellPeerReproductionAsthetic;
-             spineSenses.superRecombination=CellPeerRecombinationAsthetic;
-             
-             symetryShell.superPrint=CellPrintMakingAsthetic;
-             symetryShell.reproduction=CellReproductionAsthetic;
-             symetryShell.superRecombination=CellRecombinationAsthetic;
-             
-             
-             spineTissueField.superPrint=CellTissuePrintMakingAsthetic;
-             spineTissueField.reproduction=CellTissueReproductionAsthetic;
-             spineTissueField.superRecombination=CellTissueRecombinationAsthetic;
-             
-             
-             //y spines
-             brainSpine.print=CellPeerRecombinationAsthetic;
-             brainSpine.reproduction=CellRecombinationAsthetic;
-             brainSpine.recombination=CellRecombinationAsthetic;
-             
-             spineOrgans.print=CellPeerReproductionAsthetic;
-             spineOrgans.recombination=CellReproductionAsthetic;
-             spineOrgans.reproduction=CellTissueReproductionAsthetic;
-             
-             spineReceptors.print=CellPeerPrintMakingAsthetic;
-             spineReceptors.recombination=CellPrintMakingAsthetic;
-             spineReceptors.reproduction=CellTissuePrintMakingAsthetic;
-                     /*
+ 
                    
     //Of all the quadrants of all the three fundamental asthetics mirrored at each symetry shell.
     //two phenomina are repeated. Analogsly they are hands and eyes. occupying the same eight
@@ -190,6 +164,7 @@ public class StrongAnthropicGaliosGroup {
             this.CellPrintMakingAsthetic.eye=this.CellTissuePrintMakingAsthetic;
             this.CellPrintMakingAsthetic.eyeHumunculous=this.CellTissueRecombinationAsthetic; 
             
+           
 
             
                                 /*
@@ -220,7 +195,16 @@ public class StrongAnthropicGaliosGroup {
     */
     }
     
-
+    public StrongAnthropicGaliosGroup multiply(StrongAnthropicGaliosGroup ceiling)
+    {
+        this.ceiling=ceiling;
+        
+        //attach tissues of ceiling 
+        //set their hands to the natural modullarity of this symetry shell
+        
+        
+        return this;
+    }
 
 
 }

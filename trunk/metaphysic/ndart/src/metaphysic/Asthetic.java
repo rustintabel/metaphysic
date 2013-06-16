@@ -48,14 +48,25 @@ public class Asthetic {
     public Asthetic eyeHumunculous;
     
     public ArrayList<Asthetic> cells=new ArrayList<Asthetic>();
-    ArrayList<Asthetic> organs=new ArrayList<Asthetic>();
-    public Asthetic plus(Asthetic newOrgan){
-        organs.add(newOrgan);
+    ArrayList<Asthetic> containingBodies=new ArrayList<Asthetic>();
+    
+    public Asthetic plus(Asthetic body){
+        //pass in the containing body to add this controler and return self so the outside edge can too.
+        
+        containingBodies.add(body);
         return this;
     }
-    public Asthetic multiply(Asthetic cell){
-        //the connections between cells in the asthetic should simply be a shared modual name.
-        cells.add(cell);return this;}
+    
+    public Asthetic multiply(Asthetic tissue){
+        //pass in the containing tissue and return self so that you can again multiply another.
+        
+        tissue.eye=handHumunculous;
+        tissue.handHumunculous=hand;
+        tissue.hand=eye;
+        tissue.eyeHumunculous=eyeHumunculous;
+        
+        
+        cells.add(tissue);return this;}
 
     //add an asthetic , one of the three fundamental types from the layer of complexity
     //below many of which the 
