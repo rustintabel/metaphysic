@@ -72,5 +72,7 @@ public class Metaphysic {
         graphics.drawLine((int)segmentQuarterX, (int)segmentQuarterY, (int)segmentCenterX, (int)segmentCenterY);
         graphics.drawLine((int)segmentCenterX, (int)segmentCenterY, (int)segmentThreeQuarterX, (int)segmentThreeQuarterY);
         graphics.drawLine((int)segmentThreeQuarterX, (int)segmentThreeQuarterY, endX, endY);
+        
+        
     } 
 }
