@@ -36,6 +36,8 @@ import java.util.ArrayList;
  */
 public class StrongAnthropicGaliosGroup {
     
+        public GeneralStrongAnthropicGaliosGroup generalInformationFeild;
+    
         public StrongAnthropicGaliosGroup ceiling=new StrongAnthropicGaliosGroup();
 
             
@@ -77,9 +79,12 @@ public class StrongAnthropicGaliosGroup {
             
             RecombinationAsthetic CellTissueRecombinationAsthetic,
             ReproductionAsthetic CellTissueReproductionAsthetic,
-            PrintMakingAsthetic CellTissuePrintMakingAsthetic
+            PrintMakingAsthetic CellTissuePrintMakingAsthetic,
+            GeneralStrongAnthropicGaliosGroup generalInformationFeild
             )
     {
+        this.generalInformationFeild=generalInformationFeild;
+        
             this.CellPeerRecombinationAsthetic=CellPeerRecombinationAsthetic;
             this.CellPeerReproductionAsthetic=CellPeerReproductionAsthetic;
             this.CellPeerPrintMakingAsthetic=CellPeerPrintMakingAsthetic;

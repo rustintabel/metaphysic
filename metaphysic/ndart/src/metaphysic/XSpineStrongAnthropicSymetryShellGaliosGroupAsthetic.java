@@ -9,7 +9,17 @@ import java.util.ArrayList;
  * @author justin
  */
 public class XSpineStrongAnthropicSymetryShellGaliosGroupAsthetic 
-extends SpineStrongAnthropicGaliosGroupAsthetic{
-    public ArrayList<Asthetic> handPhenomina=new ArrayList<Asthetic>();
-    public ArrayList<Asthetic> eyePhenomina=new ArrayList<Asthetic>();
+extends XSpineStrongAnthropicGaliosGroupAsthetic{
+
+    public void XSpineStrongAnthropicSymetryShellGaliosGroupAsthetic()
+    {
+        Phenomina hand=new Phenomina();
+        hand.setName("Hand Phenomina");
+        
+        phenomina.add(hand);
+        
+        Phenomina eye=new Phenomina();
+        eye.setName("Eye Phenomina");
+        phenomina.add(eye);
+    }
 }

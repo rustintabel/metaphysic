@@ -12,10 +12,17 @@ public class CellsStrongAnthropicGaliosGroup extends StrongAnthropicGaliosGroup{
     
     public void CellsStrongAnthropicGaliosGroup()
     {
-        symetryShell.handPhenomina.add(this.CellRecombinationAsthetic);//neutron
-        symetryShell.handPhenomina.add(this.CellReproductionAsthetic);//proton
-
-        symetryShell.eyePhenomina.add(this.CellPrintMakingAsthetic);//covalent shell
-        symetryShell.eyePhenomina.add(this.CellReproductionAsthetic);//protons 
+        Phenomina handVector=new Phenomina();
+        handVector.setName("Hand Phenomina");
+        handVector.automorphicAdd(this.CellRecombinationAsthetic);
+        handVector.automorphicAdd(this.CellReproductionAsthetic);
+        symetryShell.addPhenomina(handVector);
+        
+        
+        Phenomina eyeVector=new Phenomina();
+        eyeVector.setName("Eye Phenomina");
+        eyeVector.automorphicAdd(this.CellRecombinationAsthetic);
+        eyeVector.automorphicAdd(this.CellReproductionAsthetic);
+        symetryShell.addPhenomina(eyeVector);
     }
 }
