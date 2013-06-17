@@ -35,4 +35,6 @@ public class MolecularStrongAnthropicGaliosGroup extends StrongAnthropicGaliosGr
     ArrayList<AtomNuclearTissueFieldAsthetic> atomNuclearTissueFieldAstheticTypes
             =new ArrayList<AtomNuclearTissueFieldAsthetic>();
     
+
+    
 }

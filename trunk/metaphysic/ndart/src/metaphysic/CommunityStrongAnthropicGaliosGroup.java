@@ -11,10 +11,20 @@ package metaphysic;
 public class CommunityStrongAnthropicGaliosGroup extends StrongAnthropicGaliosGroup{
     public void CommunityStrongAnthropicGaliosGroup()
     {
-        symetryShell.handPhenomina.add(this.CellRecombinationAsthetic);//neutron
-        symetryShell.handPhenomina.add(this.CellReproductionAsthetic);//proton
+        Phenomina handVector=new Phenomina();
+        handVector.setName("Hand Phenomina");
+        handVector.automorphicAdd(this.CellRecombinationAsthetic);
+        handVector.automorphicAdd(this.CellReproductionAsthetic);
+        symetryShell.addPhenomina(handVector);
+        
+        
+        Phenomina eyeVector=new Phenomina();
+        eyeVector.setName("Eye Phenomina");
+        eyeVector.automorphicAdd(this.CellRecombinationAsthetic);
+        eyeVector.automorphicAdd(this.CellReproductionAsthetic);
+        symetryShell.addPhenomina(eyeVector);       
+        
 
-        symetryShell.eyePhenomina.add(this.CellPrintMakingAsthetic);//covalent shell
-        symetryShell.eyePhenomina.add(this.CellReproductionAsthetic);//protons 
+       
     }
 }

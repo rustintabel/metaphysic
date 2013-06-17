@@ -3,17 +3,17 @@
  * and open the template in the editor.
  */
 package metaphysic;
-
+import java.util.*;
 /**
  *
  * @author justin
  */
 public class SpineStrongAnthropicGaliosGroupAsthetic {
-    public PrintMakingAsthetic superPrint=new PrintMakingAsthetic();
-    
-    public RecombinationAsthetic superHeart=new RecombinationAsthetic();
-    public ReproductionAsthetic superHand=new ReproductionAsthetic();
-    public PrintMakingAsthetic superFoot=new PrintMakingAsthetic();
-    
+        
+    StrongAnthropicGaliosGroup feild;
+    public void SpineStrongAnthropicGaliosGroupAsthetic(StrongAnthropicGaliosGroup galiosGroup)
+    {
+        feild=galiosGroup;
+    }
 
 }

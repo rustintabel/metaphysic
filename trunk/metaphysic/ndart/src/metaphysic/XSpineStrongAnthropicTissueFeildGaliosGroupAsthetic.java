@@ -8,6 +8,6 @@ package metaphysic;
  *
  * @author justin
  */
-public class XSpineStrongAnthropicTissueFeildGaliosGroupAsthetic  extends SpineStrongAnthropicGaliosGroupAsthetic{
+public class XSpineStrongAnthropicTissueFeildGaliosGroupAsthetic  extends XSpineStrongAnthropicGaliosGroupAsthetic{
     
 }

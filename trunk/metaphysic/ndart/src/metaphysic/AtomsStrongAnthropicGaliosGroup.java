@@ -37,11 +37,18 @@ public class AtomsStrongAnthropicGaliosGroup extends StrongAnthropicGaliosGroup{
     {
         
         
-        symetryShell.handPhenomina.add(this.CellTissueRecombinationAsthetic);//proton
-        symetryShell.handPhenomina.add(this.CellTissueReproductionAsthetic);//electron
-
-        symetryShell.eyePhenomina.add(this.CellTissuePrintMakingAsthetic);//covalent shell
-        symetryShell.eyePhenomina.add(this.CellTissueReproductionAsthetic);//electrons
+        Phenomina handVector=new Phenomina();
+        handVector.setName("Hand Phenomina");
+        handVector.automorphicAdd(this.CellRecombinationAsthetic);
+        handVector.automorphicAdd(this.CellReproductionAsthetic);
+        symetryShell.addPhenomina(handVector);
+        
+        
+        Phenomina eyeVector=new Phenomina();
+        eyeVector.setName("Eye Phenomina");
+        eyeVector.automorphicAdd(this.CellRecombinationAsthetic);
+        eyeVector.automorphicAdd(this.CellReproductionAsthetic);
+        symetryShell.addPhenomina(eyeVector);
         
         for(int i=1;i<118;i++)
         {
@@ -53,6 +60,7 @@ public class AtomsStrongAnthropicGaliosGroup extends StrongAnthropicGaliosGroup{
         }
     
     }
+    
     
     
 }
