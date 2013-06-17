@@ -4,6 +4,13 @@
  */
 package metaphysic;
 
+import metaphysic.community.CommunityStrongAnthropicGaliosGroup;
+import metaphysic.organism.OrganismStrongAnthropicGaliosGroup;
+import metaphysic.cells.CellsStrongAnthropicGaliosGroup;
+import metaphysic.proteins.ProteinsStrongAnthropicGaliosGroup;
+import metaphysic.molecules.MolecularStrongAnthropicGaliosGroup;
+import metaphysic.atoms.AtomsStrongAnthropicGaliosGroup;
+import metaphysic.quarks.QuarksStrongAnthropicGaliosGroup;
 import java.util.ArrayList;
 
 
