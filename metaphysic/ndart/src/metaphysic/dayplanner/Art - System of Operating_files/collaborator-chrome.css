@@ -1,0 +1,177 @@
+#sites-page-toolbar {
+	position: relative;
+}
+#sites-page-info-bar {
+	transition:opacity 0.21s; border-bottom-color: currentColor; border-bottom-width: 0px; border-bottom-style: none; -ms-overflow-x: hidden; min-height: 57px; box-shadow: 0px 3px 3px rgba(0,0,0,0.2); -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); -webkit-transition: opacity 0.218s; -moz-transition: opacity 0.218s; -o-transition: opacity 0.218s;
+}
+.collaborator-bar-container {
+	padding-top: 13px !important; margin-right: 34px;
+}
+#sites-editor-savecancel {
+	padding-top: 13px !important; margin-right: 34px;
+}
+#sites-editor-savecancel {
+	top: 0px; right: 0px; padding-top: 6px; position: absolute;
+}
+.sites-og-leaf-page#sites-page-info-bar {
+	min-height: 40px; -moz-box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.2);
+}
+.sites-og-leaf-page .collaborator-bar-container {
+	padding-top: 4px !important; z-index: 2;
+}
+.sites-og-leaf-page #sites-editor-savecancel {
+	padding-top: 4px !important; z-index: 2;
+}
+.sites-og-leaf-page .collaborator-bar-container {
+	overflow: visible;
+}
+.sites-app-title {
+	top: 4px; padding-left: 38px !important; margin-left: 0px !important; position: relative !important;
+}
+.sites-og-leaf-page .sites-app-title {
+	top: -7px; position: absolute;
+}
+.sites-site-name-link {
+	float: left;
+}
+.sites-site-name {
+	padding: 4px 2px 4px 6px; color: rgb(51, 51, 51) !important; font-size: 20px; margin-right: 6px;
+}
+#page-btns {
+	padding: 0px 34px 0px 0px !important;
+}
+.collaborator-btn-collapse-right {
+	margin-right: -1px;
+}
+#edit-start-btn {
+	vertical-align: middle;
+}
+#edit-layout-btn {
+	vertical-align: middle;
+}
+#create-new-btn {
+	vertical-align: middle;
+}
+#create-new-page-from-template-btn {
+	vertical-align: middle;
+}
+#more-actions-btn {
+	vertical-align: middle;
+}
+#page-btns .sites-camelot-icon {
+	opacity: 0.65;
+}
+#page-btns .jfk-button-hover .sites-camelot-icon {
+	opacity: 1;
+}
+#sites-collaborator-bar {
+	z-index: 2;
+}
+#sites-collaborator-bar-create-new-page-icon {
+	background-position: -223px 0px; margin: 6px 0px; width: 11px; height: 14px;
+}
+#sites-collaborator-bar-edit-page-icon {
+	background-position: -121px 0px; margin: 6px 0px; width: 13px; height: 13px;
+}
+#sites-collaborator-bar-edit-layout-icon {
+	background-position: -516px 0px; margin: 5px 0px; width: 21px; height: 17px;
+}
+.goog-menu {
+	background: white; padding: 0px 0px 6px; border: 1px solid rgba(0, 0, 0, 0.2); transition:opacity 0.21s; white-space: nowrap; box-shadow: 0px 2px 4px rgba(0,0,0,0.2); -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); -webkit-transition: opacity 0.218s; -moz-transition: opacity 0.218s; -o-transition: opacity 0.218s;
+}
+.goog-menuheader {
+	padding: 6px 44px 6px 30px !important; color: rgb(51, 51, 51); font-size: 13px; font-weight: bold;
+}
+.goog-menuitem {
+	padding: 6px 44px 6px 30px !important; color: rgb(102, 102, 102); font-size: 13px; font-weight: normal;
+}
+.goog-menuitem-content {
+	color: rgb(102, 102, 102);
+}
+.more-actions-menu-item-helptext {
+	color: rgb(204, 204, 204);
+}
+body .goog-menuitem-highlight {
+	border-width: 0px; background-color: rgb(238, 238, 238) !important;
+}
+.goog-menuitem:focus {
+	border-width: 0px; background-color: rgb(238, 238, 238) !important;
+}
+.goog-menuitem:hover {
+	border-width: 0px; background-color: rgb(238, 238, 238) !important;
+}
+.sites-moreactions-icon {
+	margin-left: 3px;
+}
+#back-to-template-listing {
+	padding-left: 44px;
+}
+#back-to-template-listing a {
+	color: rgb(17, 85, 204); font-size: 13px; text-decoration: none;
+}
+.sites-collaborator-bar-back-arrow {
+	background-position: -16px 0px; margin: 5px 0px 5px -20px; width: 15px; height: 16px; position: absolute; opacity: 0;
+}
+.sites-site-name:hover {
+	background-color: rgb(238, 238, 238) !important;
+}
+.sites-site-name:focus {
+	background-color: rgb(238, 238, 238) !important;
+}
+.sites-site-name:hover .sites-collaborator-bar-back-arrow {
+	opacity: 0.55;
+}
+.sites-site-name:focus .sites-collaborator-bar-back-arrow {
+	opacity: 0.55;
+}
+.sites-collaborator-bar-back-arrow:hover {
+	opacity: 1 !important;
+}
+.share-pill {
+	color: rgb(17, 85, 204);
+}
+#sites-survey-link {
+	color: rgb(17, 85, 204);
+}
+.sites-share-button-permission-inherits-icon {
+	background: url("../../images/camelot.png") no-repeat; top: 4px; width: 15px; height: 17px;
+}
+.sites-share-button-permission-ignores-icon {
+	background: url("../../images/camelot.png") no-repeat; top: 4px; width: 15px; height: 17px;
+}
+.sites-share-button-permission-inherits-icon {
+	background-position: -486px 0px;
+}
+.sites-share-button-permission-ignores-icon {
+	background-position: -501px 0px;
+}
+.goog-toolbar-menu-item-icon {
+	margin-top: 0px !important;
+}
+.sites-header-divider {
+	border: currentColor;
+}
+#sites-page-toolbar .sites-header-divider {
+	border: currentColor;
+}
+.sites-edit-in-progress .sites-header-divider {
+	border: currentColor;
+}
+.sites-viewer-site-template-bar {
+	padding: 14px 28px 14px 44px;
+}
+.sites-viewer-site-template-text {
+	float: left;
+}
+.sites-viewer-site-template-title {
+	left: 0px; color: rgb(51, 51, 51); padding-bottom: 6px; font-size: 20px; display: inline-block; position: relative;
+}
+.sites-viewer-site-template-updated {
+	color: rgb(102, 102, 102); font-size: 11px; display: inline-block; position: relative;
+}
+.sites-viewer-site-template-desc {
+	color: rgb(51, 51, 51); font-size: 13px;
+}
+.sites-collaborator-buttons {
+	width: 240px; text-align: right; text-transform: uppercase;
+}
