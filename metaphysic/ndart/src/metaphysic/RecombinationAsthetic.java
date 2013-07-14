@@ -9,6 +9,7 @@ package metaphysic;
  * @author justin
  */
 public class RecombinationAsthetic extends Asthetic {
+    public String astheticType="Recombination";
     /*
 public void readWikipedia(String[] url) {
     URL url;

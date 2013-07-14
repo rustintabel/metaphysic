@@ -14,12 +14,12 @@ import metaphysic.RecombinationAsthetic;
  * @author justin
  */
 public class AtomElectronTissueFieldAsthetic extends RecombinationAsthetic{
-        public Asthetic handHumunculous=new ProteinGeneAsthetic();
+    public Asthetic handHumunculous=new ProteinGeneAsthetic();
     public Asthetic hand=new ProteinGeneAsthetic();
     public Asthetic eye=new ProteinGeneAsthetic();
     public Asthetic eyeHumunculous=new ProteinTertiaryStructureAsthetic();
     
-
+    
     
     public void handHumunculous()
     {

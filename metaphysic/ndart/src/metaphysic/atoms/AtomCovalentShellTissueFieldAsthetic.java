@@ -25,9 +25,15 @@ public class AtomCovalentShellTissueFieldAsthetic extends PrintMakingAsthetic{
     public ArrayList<AtomCovalentShellTissueFieldAsthetic> eyesOfOtherAtoms;
     int numberOfElectrons;
     
+    public void AtomCovalentShellTissueFieldAsthetic()
+    {
+        
+    }
+    
     public void AtomCovalentShellTissueFieldAsthetic(int numberOfElectrons)
     {
         this.numberOfElectrons=numberOfElectrons;
+        
     }
     
     public void handHumunculous()

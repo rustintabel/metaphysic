@@ -12,7 +12,7 @@ import java.awt.*;
 import javax.imageio.*;
  
 import java.io.*;
-import metaphysic.GeneralStrongAnthropicGaliosGroup;
+import metaphysic.GeneralStrongAnthropicGaliosGroupFractle;
  
 
  
@@ -37,8 +37,9 @@ public class Geometry {
  
     public static void main(String[] args)
     {
-        GeneralStrongAnthropicGaliosGroup metaPhysic = 
-                new GeneralStrongAnthropicGaliosGroup();
+        /*
+        GeneralStrongAnthropicGaliosGroupFractle metaPhysic = 
+                new GeneralStrongAnthropicGaliosGroupFractle();
         int screenHeight=100;
  
         int screenWidth=100;
@@ -59,15 +60,38 @@ public class Geometry {
        // YSpineStrongAnthropicBrainSpineGaliosGroupAsthetic theSpine=
          //       new YSpineStrongAnthropicBrainSpineGaliosGroupAsthetic();
  ///////////////////////////////////////
-        int dimentions=5;
+ * **/
+        int dimentions=3;
  
         double currentRadians=0.4;
  
         BSPTree tree=new BSPTree(dimentions);
  
-        //tree.buildTreeFromRandDisjointTriangles(100);
- 
-        tree.buildTreeFromRandconectedTriangles(3);
+        //"src"+File.separator+"metaphysic"+File.separator+"cells"+File.separator
+       
+        CrystalBall crystalBall=new CrystalBall
+                (
+        "src"+File.separator+"metaphysic"+File.separator+"cells"+File.separator+"CellPeerRecombinationAsthetic"
+                +File.separator+"HandHumunculous",
+        "src"+File.separator+"metaphysic"+File.separator+"cells"+File.separator+"CellPeerRecombinationAsthetic"
+                +File.separator+"Hand",
+        "src"+File.separator+"metaphysic"+File.separator+"cells"+File.separator+"CellPeerRecombinationAsthetic"
+                +File.separator+"Eye",
+        "src"+File.separator+"metaphysic"+File.separator+"cells"+File.separator+"CellPeerRecombinationAsthetic"
+                +File.separator+"EyeHumunculous",
+        "src"+File.separator+"metaphysic"+File.separator+"cells"+File.separator+"CellRecombinationAsthetic(Miosis)"
+                +File.separator+"HandHumunculous",
+        "src"+File.separator+"metaphysic"+File.separator+"cells"+File.separator+"CellRecombinationAsthetic(Miosis)"
+                +File.separator+"Hand",
+        "src"+File.separator+"metaphysic"+File.separator+"cells"+File.separator+"CellRecombinationAsthetic(Miosis)"
+                +File.separator+"Eye",
+        "src"+File.separator+"metaphysic"+File.separator+"cells"+File.separator+"CellRecombinationAsthetic(Miosis)"
+                +File.separator+"EyeHumunculous",
+        "src"+File.separator+"metaphysic"+File.separator+"cells"+File.separator+"YSpineStrongAnthropicBrainSpineGaliosGroupAsthetic"
+                +File.separator+"multiply"
+                );
+       
+        tree.buildTreeFromRandomlyPositionedDisjointImageFiles(crystalBall);
  
         try{
  
@@ -79,7 +103,7 @@ public class Geometry {
  
             double radiansSoFar=0;
  
-            for(int i=0;i<100;i++){
+            for(int i=0;i<200;i++){
  
             temp=tree.drawBSPTree();   
  

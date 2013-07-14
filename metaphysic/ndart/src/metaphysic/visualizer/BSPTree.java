@@ -31,9 +31,9 @@ public class BSPTree {
  
     Viewer viewer =null;
  
-    int screenHeight=300;
+    int screenHeight=1000;
  
-    int screenWidth=300;
+    int screenWidth=1000;
  
     double[] currentUnitOfRotation=null;
  
@@ -113,7 +113,51 @@ public class BSPTree {
  
     }
  
-    
+    public void buildTreeFromRandomlyPositionedDisjointImageFiles(CrystalBall crystalBall)
+ 
+    {
+ 
+        int nodesSoFar=0;
+        numberOfNodes=crystalBall.northHandHumunculous.length+
+            crystalBall.northHand.length+
+               crystalBall.northEye.length+
+                crystalBall.northEyeHumunculous.length+
+                crystalBall.southHandHumunculous.length+
+                crystalBall.southHand.length+
+                crystalBall.southEye.length+
+                crystalBall.southEyeHumunculous.length+
+                30;
+ 
+        viewer =new Viewer(dimentions, 1, 1,screenHeight,screenWidth);
+ 
+        BSPTreeNode temp=null;
+ 
+        root=new BSPTreeNode(dimentions);
+ 
+        root.setRandTriangle();
+ 
+        root.setParent(root);
+ 
+        while(nodesSoFar<numberOfNodes)
+ 
+        {
+ 
+           temp=new BSPTreeNode(dimentions);
+ 
+           temp.setRandTriangle();
+           
+           if(root.addNode(temp) )
+
+           {
+               
+               crystalBall.getImage(temp.getTriangle());
+                nodesSoFar++;
+ 
+           }
+ 
+        } 
+ 
+    }
  
     public void buildTreeFromRandconectedTriangles(int numberOfTriangles)
  

@@ -344,7 +344,7 @@ public class Point implements Cloneable {
  
       
  
-    public double distant(Point p)
+    public double distance(Point p)
  
     {
  

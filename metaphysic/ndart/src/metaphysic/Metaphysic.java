@@ -10,6 +10,11 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
+import java.awt.image.*;
+import java.awt.RenderingHints;
+import java.awt.Image;
+ 
+ 
 
 /**
  *
@@ -26,27 +31,73 @@ public class Metaphysic {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        GeneralStrongAnthropicGaliosGroup metaPhysic = 
-                new GeneralStrongAnthropicGaliosGroup();
-        int screenHeight=100;
+        GeneralStrongAnthropicGaliosGroupFractle metaPhysic = new GeneralStrongAnthropicGaliosGroupFractle();
+        int screenHeight=2000;
  
-        int screenWidth=100;
+        int screenWidth=2000;
         BufferedImage fractle= new BufferedImage(screenHeight, screenWidth, BufferedImage.TYPE_INT_RGB);
+       BufferedImage eyeImage=null; 
+       int newHeight=0;
+       String[] files=new String[0];
+       String path="src"+File.separator+"metaphysic"+File.separator+"cells"+File.separator;      
+        try{
+
+            File newFile=new File(path);
+            boolean isPath=newFile.isDirectory();
+            files=newFile.list();
+            
+            boolean isAbsolute=newFile.isAbsolute();
+            String patha=newFile.getPath();
+            
+            newHeight=eyeImage.getHeight();
+        }catch(Exception i){
+            System.out.print(i);
+        }
         Graphics2D graphics=fractle.createGraphics();
         Color lightBlue=new Color(0,128,255);
         Color yellow=new Color(255,255,0);
         Color white=new Color(255,255,255);
         Color red=new Color(255,0,0);
         Color black=new Color(0,0,0);
-        graphics.setBackground(lightBlue);
-        //graphics.drawLine(screenWidth, screenWidth, screenWidth, screenWidth);
-        for(int x=0,y=0,lastX=x,lastY=0,centerX=100,centerY=100;x<33;x++)
+        
+        
+        AstheticCircle aCircle=new AstheticCircle(50,(screenHeight/2),(screenWidth/2),metaPhysic);
+        aCircle.metaPhysic=metaPhysic;
+        aCircle.centerX=screenWidth/2;
+        aCircle.centerY=screenHeight/2;
+        
+        graphics.setColor(lightBlue);
+        graphics.fillRect(0, 0, screenWidth, screenHeight);
+        //graphics.setBackground(yellow);
+        graphics.drawLine(0, 0, screenHeight, screenWidth);
+        graphics.setColor(red);
+        graphics.drawString(""+newHeight,50, 50);
+        
+        Image small;
+        try{
+        for(int i=0;i<files.length;i++)
         {
-            y=x/20;
-            lastX=x+centerX;
-            lastY=y+centerY;
-            graphics.drawLine(x, y, lastX, lastY);
+            if(files[i].endsWith("jpg"))
+            {
+                File newFile=new File(path+files[i]);
+                eyeImage=ImageIO.read(newFile);
+                RenderingHints hint=new RenderingHints(null);
+                RescaleOp scale=new RescaleOp((float)0.5, (float)0.0, hint); 
+                small=eyeImage.getScaledInstance(50, 50, 0);
+                graphics.translate(Math.random()*(screenWidth),Math.random()*(screenHeight));
+                //graphics.setTransform(null);
+                graphics.drawImage(small, null, null);            
+            }
+
+
+
         }
+        
+        }catch(Exception e){}
+        
+       
+        
+        
         try{
             ImageIO.write(fractle,"jpg",new File("Fractle.jpg"));
         }catch(IOException i){
@@ -56,7 +107,7 @@ public class Metaphysic {
     
     public void drawRecursiveQuadrants(int startX,int startY,int endX,int endY,Graphics2D graphics 
             ,Color yellow,Color white,Color red,Color black,int centerX,int centerY,
-            GeneralStrongAnthropicGaliosGroup metaPhysic)
+            GeneralStrongAnthropicGaliosGroupFractle metaPhysic)
     {
         //metaPhysic.community
         double segmentCenterX=(startX-endX)/2;

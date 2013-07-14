@@ -9,5 +9,5 @@ package metaphysic;
  * @author justin
  */
 public class ReproductionAsthetic extends Asthetic {
-
+public String astheticType="Reproduction";
 }
