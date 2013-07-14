@@ -286,7 +286,65 @@ public class BSPTreeNode {
  
    } 
  
-    
+       public boolean addNode(BSPTreeNode newNode,CrystalBall crystalBall)
+ 
+   {
+ 
+	    boolean success=false;
+ 
+	    if(isRight(newNode.getTriangle()))
+ 
+	    {
+ 
+	        if(right==null)
+ 
+	        {
+ 
+	            setRight(newNode);
+ 
+	            success=true;
+ 
+	        }
+ 
+	        else
+ 
+	        {
+ 
+	            success=right.addNode(newNode);
+ 
+	        }    
+ 
+	    }
+ 
+	    else if(isLeft(newNode.getTriangle()))
+ 
+	    {
+ 
+	         if(left==null)
+ 
+	        {
+ 
+	            setLeft(newNode);
+ 
+	            success=true;
+ 
+	        }
+ 
+	        else
+ 
+	        {
+ 
+	            success=left.addNode(newNode);
+ 
+	        }    
+ 
+	    }
+ 
+	
+ 
+	    return success;
+ 
+   } 
  
    public void setParent(BSPTreeNode p)
  

@@ -5,7 +5,8 @@
 package metaphysic.visualizer;
 
 import java.awt.image.*;
- 
+import java.awt.geom.AffineTransform;
+  
 import java.awt.*;
  
 /**
@@ -107,9 +108,8 @@ public class Viewer {
     
  
     public void drawTriangle(Triangle t)
- 
     {
- 
+        
         int[] x=new int[3];
  
         int[] y=new int[3];
@@ -118,25 +118,75 @@ public class Viewer {
  
         {
  
-        Point p=t.getPoint(i);
- 
-        Point pp=orthogonalProjectPoint(p);
- 
-        //Point pp=perspectiveProjectPoint(p);
- 
-        x[i]=(int)(pp).getCoordinate(0)+(screenWidth/2);
- 
-        y[i]=(int)(pp).getCoordinate(1)+(screenHeight/2);
+            Point p=t.getPoint(i);
+
+            Point pp=orthogonalProjectPoint(p);
+
+            //Point pp=perspectiveProjectPoint(p);
+
+            x[i]=(int)(pp).getCoordinate(0)+(screenWidth/2);
+
+            y[i]=(int)(pp).getCoordinate(1)+(screenHeight/2);
  
         }
  
         graphics.setColor(t.getColor());
  
-        graphics.fillPolygon(x,y,3);
+        //graphics.fillPolygon(x,y,3);
+        graphics.drawPolygon(x, y, 3);
+        
+        if(t.image!=null)
+        {
+            AffineTransform translate=new AffineTransform();
+           translate.setToTranslation(x[0],y[0] );
+           Point base=t.getPoint(2).minus(t.getPoint(0));
+           Point hypotenuse=t.getPoint(1).minus(t.getPoint(0));
+           //rotate by anglle between hypotennuus and base
+           //translate=AffineTransform.getRotateInstance(base.coordinates[0], base.coordinates[1]);
+           AffineTransform scale=new AffineTransform();
+           //scale.setToScale
+             //      (t.getPoint(1).minus(t.getPoint(0)).coordinates[0], 
+               //    t.getPoint(1).minus(t.getPoint(0)).coordinates[1]);
+           
+           scale.setToScale
+                   (1/(t.getPoint(1).coordinates[0]-t.getPoint(0).coordinates[0]), 
+                   1/(t.getPoint(1).coordinates[1]-t.getPoint(0).coordinates[1]));
+           
+           //translate.concatenate(scale);
+           //scale.concatenate(translate);
+           //t.image.getScaledInstance(
+           //        (int)(1/Math.abs(t.getPoint(1).coordinates[0]-t.getPoint(0).coordinates[0])),
+           //        (int)(1/Math.abs(t.getPoint(1).coordinates[1]-t.getPoint(0).coordinates[1])), 
+           //        Image.SCALE_SMOOTH);
+           
+           graphics.drawImage(t.image, translate, null);       
+        }
+
+        
+
  
     }
  
-    
+        public void drawImageFile(ImageFile image)
+    {
+
+        Point pp=orthogonalProjectPoint(image.bottom.points[0]);
+        Point ppSize=orthogonalProjectPoint(image.bottom.points[1]);
+        //Point pp=perspectiveProjectPoint(p);
+ 
+        int imageBottomCornerX=(int)(pp).getCoordinate(0)+(screenWidth/2);
+ 
+        int imageBottomCornerY=(int)(pp).getCoordinate(1)+(screenHeight/2);
+ 
+        
+        
+        image.xform.setToTranslation(imageBottomCornerX,imageBottomCornerY );
+        AffineTransform scale=new AffineTransform();
+        scale.setToScale(ppSize.minus(pp).coordinates[0], ppSize.minus(pp).coordinates[1]);
+        image.xform.concatenate(scale);
+        graphics.drawImage(image.image, image.xform, null);
+ 
+    }
  
     public Point perspectiveProjectPoint(Point p)
  

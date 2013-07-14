@@ -20,6 +20,12 @@ public class AtomCovalentShellAsthetic extends PrintMakingAsthetic{
     public Asthetic eyeHumunculous=new OrganismSensesAsthetic() ;
     
     
+    public void AtomCovalentShellAsthetic(Asthetic handHumunculous,Asthetic hand,Asthetic eye,Asthetic eyeHumunculous)
+    {
+        
+        super.Asthetic(handHumunculous, hand, eye, eyeHumunculous);
+    }
+    
     /** 
      *
      */ 

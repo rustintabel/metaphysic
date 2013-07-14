@@ -49,7 +49,12 @@ public class Triangle {
  
     Point center=null;
  
+    java.awt.Image image=null;
     
+    public void addImage(java.awt.Image image)
+    {
+        this.image=image;
+    }
  
     public int getNumPointsSet()
  
@@ -243,7 +248,7 @@ public class Triangle {
  
 	
  
-	        createRandTriangleAtOriginInXYPlane(400.0);
+	        createRandTriangleAtOriginInXYPlane(500.0);
  
 	        for(int i=1;i<(dimentions-1);i++)
  

@@ -29,37 +29,37 @@ import java.util.ArrayList;
     * learning each others variation on their astheic preferences to make
     * each other happy.
     **/
-public class GeneralStrongAnthropicGaliosGroup 
+public class GeneralStrongAnthropicGaliosGroupFractle 
 {
     
     ArrayList<Phenomina> phenomina =new ArrayList<Phenomina>();
     
-public CommunityStrongAnthropicGaliosGroup community = new CommunityStrongAnthropicGaliosGroup(); 
-public OrganismStrongAnthropicGaliosGroup organisms =new OrganismStrongAnthropicGaliosGroup();
-public CellsStrongAnthropicGaliosGroup cells = new CellsStrongAnthropicGaliosGroup();
-public ProteinsStrongAnthropicGaliosGroup proteins = new ProteinsStrongAnthropicGaliosGroup();
-public MolecularStrongAnthropicGaliosGroup molecules = new MolecularStrongAnthropicGaliosGroup();
+//public CommunityStrongAnthropicGaliosGroup community = new CommunityStrongAnthropicGaliosGroup(); 
+//public OrganismStrongAnthropicGaliosGroup organisms =new OrganismStrongAnthropicGaliosGroup();
+//public CellsStrongAnthropicGaliosGroup cells = new CellsStrongAnthropicGaliosGroup();
+//public ProteinsStrongAnthropicGaliosGroup proteins = new ProteinsStrongAnthropicGaliosGroup();
+//public MolecularStrongAnthropicGaliosGroup molecules = new MolecularStrongAnthropicGaliosGroup();
 public AtomsStrongAnthropicGaliosGroup atoms =new AtomsStrongAnthropicGaliosGroup();
 public QuarksStrongAnthropicGaliosGroup quarks=new QuarksStrongAnthropicGaliosGroup();
 
-    public void GeneralStrongAnthropicGaliosGroup()
+    public void GeneralStrongAnthropicGaliosGroupFractle()
     {
         atoms.multiply(quarks);
-        molecules.multiply(atoms);
-        proteins.multiply(molecules);
-        cells.multiply(proteins);
-        organisms.multiply(cells);
-        community.multiply(organisms);
+        //molecules.multiply(atoms);
+        //proteins.multiply(molecules);
+        //cells.multiply(proteins);
+        //organisms.multiply(cells);
+        //community.multiply(organisms);
         
-        Phenomina molecularElectricInformationFeild=new Phenomina();
-        molecularElectricInformationFeild.name="Electricity";
-        molecularElectricInformationFeild.automorphicAdd(molecules.CellTissuePrintMakingAsthetic);
-        molecules.spineTissueField.addPhenomina(molecularElectricInformationFeild);
+        //Phenomina molecularElectricInformationFeild=new Phenomina();
+        //molecularElectricInformationFeild.name="Electricity";
+        //molecularElectricInformationFeild.automorphicAdd(molecules.CellTissuePrintMakingAsthetic);
+        //molecules.spineTissueField.addPhenomina(molecularElectricInformationFeild);
         
-        Phenomina atomsElectricInformationFeild=new Phenomina();
-        atomsElectricInformationFeild.name="Electricity";
-        atomsElectricInformationFeild.automorphicAdd(atoms.CellPeerPrintMakingAsthetic);
-        atoms.spineSenses.addPhenomina(atomsElectricInformationFeild);
+        //Phenomina atomsElectricInformationFeild=new Phenomina();
+        //atomsElectricInformationFeild.name="Electricity";
+        //atomsElectricInformationFeild.automorphicAdd(atoms.CellPeerPrintMakingAsthetic);
+        //atoms.spineSenses.addPhenomina(atomsElectricInformationFeild);
         
         
     }

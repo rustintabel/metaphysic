@@ -36,10 +36,11 @@ import java.util.ArrayList;
  */
 public class StrongAnthropicGaliosGroup {
     
-        public GeneralStrongAnthropicGaliosGroup generalInformationFeild;
+        public GeneralStrongAnthropicGaliosGroupFractle generalInformationFeild;
     
-        public StrongAnthropicGaliosGroup ceiling=new StrongAnthropicGaliosGroup();
+        public StrongAnthropicGaliosGroup ceiling=null;
 
+        public Asthetic[][] asthetics=new Asthetic[3][3];
             
     
             public RecombinationAsthetic CellPeerRecombinationAsthetic;
@@ -80,7 +81,7 @@ public class StrongAnthropicGaliosGroup {
             RecombinationAsthetic CellTissueRecombinationAsthetic,
             ReproductionAsthetic CellTissueReproductionAsthetic,
             PrintMakingAsthetic CellTissuePrintMakingAsthetic,
-            GeneralStrongAnthropicGaliosGroup generalInformationFeild
+            GeneralStrongAnthropicGaliosGroupFractle generalInformationFeild
             )
     {
         this.generalInformationFeild=generalInformationFeild;
@@ -97,6 +98,19 @@ public class StrongAnthropicGaliosGroup {
             this.CellTissueReproductionAsthetic=CellTissueReproductionAsthetic;
             this.CellTissuePrintMakingAsthetic=CellTissuePrintMakingAsthetic;
             
+            
+            //Add the 9 canonicle asthetics to an array.
+            asthetics[0][0]=CellPeerRecombinationAsthetic;
+            asthetics[0][1]=CellPeerReproductionAsthetic;
+            asthetics[0][2]=CellPeerPrintMakingAsthetic;
+            
+            asthetics[1][0]=CellRecombinationAsthetic;
+            asthetics[1][1]=CellReproductionAsthetic;
+            asthetics[1][2]=CellPrintMakingAsthetic;
+            
+            asthetics[2][0]=CellTissueRecombinationAsthetic;
+            asthetics[2][1]=CellTissueReproductionAsthetic;
+            asthetics[2][2]=CellTissuePrintMakingAsthetic;
             
  
                    
@@ -169,37 +183,10 @@ public class StrongAnthropicGaliosGroup {
             this.CellPrintMakingAsthetic.eye=this.CellTissuePrintMakingAsthetic;
             this.CellPrintMakingAsthetic.eyeHumunculous=this.CellTissueRecombinationAsthetic; 
             
-           
-
-            
-                                /*
-                                 * 
-                                 * 
-        *             RecombinationAsthetic CellPeerRecombinationAsthetic;
-            ReproductionAsthetic CellPeerReproductionAsthetic;
-            PrintMakingAsthetic CellPeerPrintMakingAsthetic;
-            * 
-            RecombinationAsthetic CellRecombinationAsthetic;
-            ReproductionAsthetic CellReproductionAsthetic;
-            PrintMakingAsthetic CellPrintMakingAsthetic;
-            * 
-            RecombinationAsthetic CellTissueRecombinationAsthetic;
-            ReproductionAsthetic CellTissueReproductionAsthetic;
-            PrintMakingAsthetic CellTissuePrintMakingAsthetic ;
-                                 * 
-                                 * 
-                                 * 
-                                 * 
-                                 * SpineStrongAnthropicSensesGaliosGroupAsthetic
-                                 * StrongAnthropicSymmetryShellGaliosGroupAsthetic
-                                 * SpineStrongAnthropicTissueFeildGaliosGroupAsthetic
-                    * 
-                    * SpineStrongAnthropicBrainSpineGaliosGroupAsthetic
-                    * SpineStrongAnthropicOrgansGaliosGroupAsthetic
-                    * SpineStrongAnthropicReceptorsGaliosGroupAsthetic
-    */
     }
-    
+    /*
+     * Use a feid to set a canonicle multiply through backbones.
+     */
     public StrongAnthropicGaliosGroup multiply(StrongAnthropicGaliosGroup ceiling)
     {
         this.ceiling=ceiling;
