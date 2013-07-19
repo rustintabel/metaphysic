@@ -1,8 +1,16 @@
 package metaphysic.mindmapping;
 
+/**
+ *
+ * @author justin
+ */
 public class ProcessorMessageListenerAdapter implements
 		ProcessorMessageListener {
-	public void messageSent(ProcessorMessageEvent e) 
+	/**
+     *
+     * @param e
+     */
+    public void messageSent(ProcessorMessageEvent e) 
 	{
 		System.out.println(e.message);
 		

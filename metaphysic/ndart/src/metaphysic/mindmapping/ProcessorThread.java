@@ -13,21 +13,53 @@ public class ProcessorThread extends Thread {
 	String userName;
 	int setID=0;
 	boolean mode=true;
-	public static enum ProcessorThreadState 
+	/**
+     *
+     */
+    public static enum ProcessorThreadState 
 	{
-		STOPPED,
-		PROCESSING,
-		FINISHEDPROCESSINGUSERS,
-		FINISHEDPROCESSINGUSER,
-		FINISHEDPROCESSINGSETS,
-		FINISHEDPROCESSINGSET,
-		FINISHEDPROCESSINGRECOMMENDATIONS
+		/**
+             *
+             */
+            STOPPED,
+		/**
+             *
+             */
+            PROCESSING,
+		/**
+             *
+             */
+            FINISHEDPROCESSINGUSERS,
+		/**
+             *
+             */
+            FINISHEDPROCESSINGUSER,
+		/**
+             *
+             */
+            FINISHEDPROCESSINGSETS,
+		/**
+             *
+             */
+            FINISHEDPROCESSINGSET,
+		/**
+             *
+             */
+            FINISHEDPROCESSINGRECOMMENDATIONS
 		};
-	public ProcessorThreadState currentState=ProcessorThreadState.STOPPED;
+	/**
+     *
+     */
+    public ProcessorThreadState currentState=ProcessorThreadState.STOPPED;
 	Thread t;
 	/**
 	 * 
-	 */
+         * 
+         * @param processor 
+         * @param userName
+         * @param setID 
+         * @param mode  
+         */
 	public ProcessorThread(Processor processor,String userName,int setID,boolean mode) {
 		this.mode=mode;
 		this.processor= processor;
@@ -37,7 +69,10 @@ public class ProcessorThread extends Thread {
 		t.start();
 	}
 	
-	public void run() 
+	/**
+     *
+     */
+    public void run() 
 	{
 		try{
 			if(mode)

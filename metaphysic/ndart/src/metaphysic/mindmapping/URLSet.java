@@ -1,4 +1,4 @@
-package reaping;
+package metaphysic.mindmapping;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -8,10 +8,20 @@ import java.sql.Statement;
 import java.util.List;
 import java.util.ArrayList;
 
+/**
+ *
+ * @author justin
+ */
 public class URLSet {
-	public boolean needsUpdateingInDatabase=false;
+	/**
+     *
+     */
+    public boolean needsUpdateingInDatabase=false;
 	private int urlSetID;
-	public int rank=0;
+	/**
+     *
+     */
+    public int rank=0;
 	private String label;
 	private List<Integer> userIDs= new ArrayList<Integer>();
 	private List<Integer> userCount= new ArrayList<Integer>();
@@ -22,7 +32,14 @@ public class URLSet {
 	private List<String> recommendations= new ArrayList<String>();
 	private List<Integer> recommendationCount= new ArrayList<Integer>();
 	
-	public URLSet (int uRLSetID,String label,int rank,boolean newSet) {
+	/**
+     *
+     * @param uRLSetID
+     * @param label
+     * @param rank
+     * @param newSet
+     */
+    public URLSet (int uRLSetID,String label,int rank,boolean newSet) {
 		this.urlSetID = uRLSetID;
 		this.label=label;
 		this.rank=rank;
@@ -32,7 +49,13 @@ public class URLSet {
 		needsUpdateingInDatabase=newSet;
 	}
 	
-	public void addUser(int userID,int userCount,boolean newUser)
+	/**
+     *
+     * @param userID
+     * @param userCount
+     * @param newUser
+     */
+    public void addUser(int userID,int userCount,boolean newUser)
 	{
 		//don't add if already there
 		for(int i=0;i<userIDs.size();i++)
@@ -82,7 +105,13 @@ public class URLSet {
 		this.urlCount.add(1);
 	}
 	
-	public void addUrl(int urlID,int urlCount,boolean newUrl)
+	/**
+     *
+     * @param urlID
+     * @param urlCount
+     * @param newUrl
+     */
+    public void addUrl(int urlID,int urlCount,boolean newUrl)
 	{
 		//don't add if already there
 		for(int i=0;i<urlIDs.size();i++)
@@ -97,38 +126,68 @@ public class URLSet {
 		this.urlCount.add(urlCount);
 	}
 	
-	public void setLabel(String label)
+	/**
+     *
+     * @param label
+     */
+    public void setLabel(String label)
 	{
 		this.label=label;
 		this.needsUpdateingInDatabase=true;	
 	}
 	
-	public int getUserCount () {
+	/**
+     *
+     * @return
+     */
+    public int getUserCount () {
 		return this.userIDs.size();
 	}
 	
-	public int getURLCount()
+	/**
+     *
+     * @return
+     */
+    public int getURLCount()
 	{
 		return this.urlIDs.size();
 	}
 
 	
-	public int getID () {
+	/**
+     *
+     * @return
+     */
+    public int getID () {
 		return this.urlSetID;
 	}
 	
-	public List<Integer> getUrlIDs()
+	/**
+     *
+     * @return
+     */
+    public List<Integer> getUrlIDs()
 	{
 		return urlIDs;
 	}
 	
-	public List<Integer> getUserIDs()
+	/**
+     *
+     * @return
+     */
+    public List<Integer> getUserIDs()
 	{
 		return userIDs;
 		
 	}
 	
-	public void addBookmarksCommonToTwoUsers(int userID1,int userID2,List<Integer> commonBookmarks)
+	/**
+     *
+     * @param userID1
+     * @param userID2
+     * @param commonBookmarks
+     */
+    public void addBookmarksCommonToTwoUsers(int userID1,int userID2,List<Integer> commonBookmarks)
 	{
 		// if the defining bookmark is not in this set then just return.
 		boolean doCommonBookmarksBelongInSet=false;
@@ -155,7 +214,11 @@ public class URLSet {
 	}
 
 	
-	public synchronized void updateInDatabase(Connection conn)
+	/**
+     *
+     * @param conn
+     */
+    public synchronized void updateInDatabase(Connection conn)
 	{
 //update("CREATE TABLE URLSetsTabel (SetID INTEGER, Label VARCHAR(256),  UserCount INTEGER)", conn);
 

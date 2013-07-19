@@ -48,6 +48,10 @@ import java.net.URL;
 import java.net.MalformedURLException;
 import javax.swing.border.EtchedBorder;
 
+/**
+ *
+ * @author justin
+ */
 public class TheReaper extends JPanel implements ActionListener,
 HyperlinkListener,MouseListener,ProcessorMessageListener,
 ProcessorThreadStateChangedListener{
@@ -115,6 +119,9 @@ ProcessorThreadStateChangedListener{
 
     private ProcessorThread.ProcessorThreadState currentProcessingState=ProcessorThread.ProcessorThreadState.STOPPED;
 
+    /**
+     *
+     */
     public TheReaper() {
 
     	currentProcessor=new Processor(this,this);
@@ -591,6 +598,10 @@ ProcessorThreadStateChangedListener{
 
     
 
+    /**
+     *
+     * @param conn
+     */
     public void loadUsers(Connection conn)
     {
     	if(!currentProcessor.getLastUser(conn).equalsIgnoreCase(""))
@@ -634,6 +645,10 @@ ProcessorThreadStateChangedListener{
     	}
     }
 
+    /**
+     *
+     * @param id
+     */
     public void loadBookmarkSetUsers(int id)
     {
     	HashMap<Integer,User> users= currentProcessor.getUsers(conn);
@@ -681,6 +696,10 @@ ProcessorThreadStateChangedListener{
 
     }
 
+    /**
+     *
+     * @param conn
+     */
     public void loadSets(Connection conn)
     {
 
@@ -737,6 +756,9 @@ ProcessorThreadStateChangedListener{
 
     }
 
+    /**
+     *
+     */
     public void sortSetsByRank()
     {
     	URLSetComparator compare= new URLSetComparator();
@@ -745,6 +767,12 @@ ProcessorThreadStateChangedListener{
 
     // Regardless of sort order (ascending or descending), null values always appear last.
     // colIndex specifies a column in model.
+    /**
+     *
+     * @param model
+     * @param colIndex
+     * @param ascending
+     */
     public void sortAllRowsBy(DefaultTableModel model, int colIndex, boolean ascending) {
         Vector data = model.getDataVector();
         Collections.sort(data, new ColumnSorter(colIndex, ascending));
@@ -752,7 +780,18 @@ ProcessorThreadStateChangedListener{
     }
 
     
-	public static DefaultGraphCell createVertex(String name, double x,
+	/**
+     *
+     * @param name
+     * @param x
+     * @param y
+     * @param w
+     * @param h
+     * @param bg
+     * @param raised
+     * @return
+     */
+    public static DefaultGraphCell createVertex(String name, double x,
 			double y, double w, double h, Color bg, boolean raised) {
 
 			// Create vertex with the given name
@@ -776,6 +815,10 @@ ProcessorThreadStateChangedListener{
 		}
 
     
+    /**
+     *
+     * @param e
+     */
     public void actionPerformed(ActionEvent e) {
 
     	if(e.getActionCommand().equals("AddMindMapNode"))
@@ -984,6 +1027,10 @@ ProcessorThreadStateChangedListener{
     
     
     
+    /**
+     *
+     * @param e
+     */
     public void mouseClicked(MouseEvent e){
     	try{
 			Class.forName("org.hsqldb.jdbcDriver");
@@ -1027,14 +1074,26 @@ ProcessorThreadStateChangedListener{
         }
     }
 
+    /**
+     *
+     * @param e
+     */
     public void mouseEntered(MouseEvent e){
 
         }
 
+    /**
+     *
+     * @param e
+     */
     public void mouseExited(MouseEvent e){
 
         }
 
+    /**
+     *
+     * @param e
+     */
     public void mousePressed(MouseEvent e){
         if (e.isPopupTrigger()) {
             popup.show(e.getComponent(),
@@ -1042,6 +1101,10 @@ ProcessorThreadStateChangedListener{
         }
         }
 
+    /**
+     *
+     * @param e
+     */
     public void mouseReleased(MouseEvent e){
         if (e.isPopupTrigger()) {
             popup.show(e.getComponent(),
@@ -1049,6 +1112,10 @@ ProcessorThreadStateChangedListener{
         }
         }
 
+    /**
+     *
+     * @param he
+     */
     public void hyperlinkUpdate(HyperlinkEvent he)
     {
         if (HyperlinkEvent.EventType.ACTIVATED.equals(he.getEventType())  )
@@ -1068,14 +1135,22 @@ ProcessorThreadStateChangedListener{
 
     }
 
-	public void messageSent(ProcessorMessageEvent e)
+	/**
+     *
+     * @param e
+     */
+    public void messageSent(ProcessorMessageEvent e)
 	{
 		processingBookmark.setText(e.message);
 	}
 
 
 
-	public void processorThreadstateChanged(ProcessorThreadStateChangedEvent e)
+	/**
+     *
+     * @param e
+     */
+    public void processorThreadstateChanged(ProcessorThreadStateChangedEvent e)
 	{
 		currentProcessingState=e.state;
     	try{
@@ -1155,6 +1230,10 @@ ProcessorThreadStateChangedListener{
     }
 
 
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         javax.swing.SwingUtilities.invokeLater(new Runnable() {
             public void run() {

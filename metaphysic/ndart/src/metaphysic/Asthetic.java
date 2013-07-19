@@ -44,11 +44,11 @@ public class Asthetic {
     //modular organs can cells be mapped to organs in a way that is simple enough for a brain to control.
     //The brain body senses and again nucleous cytoplasm membrain each provide neccesary
     //modularity by being both simple and reflecting each other.
-    Asthetic handHumunculous;
-    Asthetic hand;
+    public Asthetic handHumunculous;
+    public Asthetic hand;
     
-    Asthetic eye;
-    Asthetic eyeHumunculous;
+    public Asthetic eye;
+    public Asthetic eyeHumunculous;
     
     
     

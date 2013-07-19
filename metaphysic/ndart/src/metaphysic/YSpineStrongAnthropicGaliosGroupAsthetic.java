@@ -21,7 +21,7 @@ public class YSpineStrongAnthropicGaliosGroupAsthetic extends SpineStrongAnthrop
     public Asthetic cellSuperEyeHumunnculous=new Asthetic();
     
     public Asthetic senses;
-    public Asthetic organ;
+    public Asthetic body;
     public Asthetic tissue;
     
     public void YSpineStrongAnthropicGaliosGroupAsthetic(
@@ -29,7 +29,7 @@ public class YSpineStrongAnthropicGaliosGroupAsthetic extends SpineStrongAnthrop
             RecombinationAsthetic heart,ReproductionAsthetic hand,PrintMakingAsthetic foot)
     {
             this.senses=senses;
-            this.organ=organ;
+            this.body=organ;
             this.tissue=tissue;
         
             this.bodySuperHandHumunculous.handHumunculous=this.cellSuperEye.eye;

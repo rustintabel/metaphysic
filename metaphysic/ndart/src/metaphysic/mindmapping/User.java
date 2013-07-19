@@ -1,4 +1,4 @@
-package reaping;
+package metaphysic.mindmapping;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -12,25 +12,47 @@ import java.sql.PreparedStatement;
 
 
 
+/**
+ *
+ * @author justin
+ */
 public class User {
 	private String username;
 	private int userID=0;
 	private List<Integer> urlIDs= new ArrayList<Integer>();
 	private List<Boolean> isURLAssociatedWithUserInDatabase= new ArrayList<Boolean>();
-	public boolean needsUpdateingInDatabase=false;
+	/**
+     *
+     */
+    public boolean needsUpdateingInDatabase=false;
 
-	public User (String username,int userID,boolean newUser) {
+	/**
+     *
+     * @param username
+     * @param userID
+     * @param newUser
+     */
+    public User (String username,int userID,boolean newUser) {
 		this.username = username;
 		this.userID=userID;
 		needsUpdateingInDatabase=newUser;
 	}
 	
-	public int getId()
+	/**
+     *
+     * @return
+     */
+    public int getId()
 	{
 		return userID;	
 	}
 	
-	public void addUrl(int urlID,boolean newUrlForThisUser)
+	/**
+     *
+     * @param urlID
+     * @param newUrlForThisUser
+     */
+    public void addUrl(int urlID,boolean newUrlForThisUser)
 	{
 		for(int i=0;i<urlIDs.size();i++)
 		{
@@ -45,29 +67,54 @@ public class User {
 
 	}
 	
-	public int getUrl(int i)
+	/**
+     *
+     * @param i
+     * @return
+     */
+    public int getUrl(int i)
 	{
 		return urlIDs.get(i);
 	}
 	
-	public List<Integer> getUrls()
+	/**
+     *
+     * @return
+     */
+    public List<Integer> getUrls()
 	{
 		return urlIDs;
 	}
 
-	public String getUsername () {
+	/**
+     *
+     * @return
+     */
+    public String getUsername () {
 		return this.username;
 	}
 
-	public void setUsername (String username) {
+	/**
+     *
+     * @param username
+     */
+    public void setUsername (String username) {
 		this.username = username;
 	}
 
-	public int getCount () {
+	/**
+     *
+     * @return
+     */
+    public int getCount () {
 		return urlIDs.size();
 	}
 	
-	public void updateInDatabase(Connection conn)
+	/**
+     *
+     * @param conn
+     */
+    public void updateInDatabase(Connection conn)
 	{
 		//update("CREATE TABLE UserTable ( UserID INTEGER, UserName VARCHAR(256), SetsUpdated DATE)", conn);
 		//update("CREATE TABLE URLUsersTabel ( URLID INTEGER, UserID INTEGER )", conn);

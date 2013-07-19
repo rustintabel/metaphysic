@@ -10,6 +10,10 @@ import java.util.EventListener;
  *
  */
 public interface ProcessorMessageListener extends EventListener {
-	public abstract void messageSent(ProcessorMessageEvent e);
+	/**
+     *
+     * @param e
+     */
+    public abstract void messageSent(ProcessorMessageEvent e);
 }
 

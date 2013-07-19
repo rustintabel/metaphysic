@@ -125,8 +125,7 @@ public class BSPTree {
                 crystalBall.southHandHumunculous.length+
                 crystalBall.southHand.length+
                 crystalBall.southEye.length+
-                crystalBall.southEyeHumunculous.length+
-                30;
+                crystalBall.southEyeHumunculous.length;
  
         viewer =new Viewer(dimentions, 1, 1,screenHeight,screenWidth);
  
@@ -228,7 +227,7 @@ public class BSPTree {
         viewer.clear();
  
         root.draw(viewer);
- 
+
         return viewer.getImage();
  
     }
