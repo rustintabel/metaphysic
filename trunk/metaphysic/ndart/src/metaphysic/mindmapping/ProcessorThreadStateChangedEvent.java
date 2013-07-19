@@ -2,6 +2,10 @@ package metaphysic.mindmapping;
 
 import java.awt.AWTEvent;
 
+/**
+ *
+ * @author justin
+ */
 public class ProcessorThreadStateChangedEvent extends AWTEvent {
 
 	
@@ -9,7 +13,12 @@ public class ProcessorThreadStateChangedEvent extends AWTEvent {
 	Processor processor;
 	ProcessorThread.ProcessorThreadState state;
 	
-	public ProcessorThreadStateChangedEvent(Processor processor,ProcessorThread.ProcessorThreadState state)
+	/**
+     *
+     * @param processor
+     * @param state
+     */
+    public ProcessorThreadStateChangedEvent(Processor processor,ProcessorThread.ProcessorThreadState state)
 	{
 		super(processor,0);
 		this.processor=processor;

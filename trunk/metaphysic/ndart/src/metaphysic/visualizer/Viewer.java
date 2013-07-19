@@ -68,10 +68,10 @@ public class Viewer {
         graphics=currentView.createGraphics();
  
         clear();
- 
+        Color lightBlue=new Color(0,128,255);
         Color c2=new Color(0,0,0);
  
-        graphics.setBackground(c2);
+        graphics.setBackground(lightBlue);
  
     }
  
@@ -159,7 +159,7 @@ public class Viewer {
            //        (int)(1/Math.abs(t.getPoint(1).coordinates[1]-t.getPoint(0).coordinates[1])), 
            //        Image.SCALE_SMOOTH);
            
-           graphics.drawImage(t.image, translate, null);       
+           graphics.drawImage(t.image, scale, null);       
         }
 
         

@@ -24,6 +24,10 @@ import java.sql.Statement;
 import java.sql.PreparedStatement;
 import java.util.HashMap;
 
+/**
+ *
+ * @author justin
+ */
 public class Processor {	
 	static final String DEL_ICIO_US_URL = "http://del.icio.us/";
 	static final int SAVED_BY_THRESHOLD = 1000;
@@ -34,15 +38,26 @@ public class Processor {
 	static final String OTHERS_HREF_XPATH = "//A[@class='who']/@href";
 	private ProcessorMessageListener processorMessengerListener;
 	private ProcessorThreadStateChangedListener processorThreadStateChangedListener;
-	public String username;
-	public String currentMessage="";
+	/**
+     *
+     */
+    public String username;
+	/**
+     *
+     */
+    public String currentMessage="";
 	private HashMap<Integer,User> linkedUsers = new HashMap<Integer,User>();
 	private HashMap<Integer,Url> urls = new HashMap<Integer,Url>();
 	private HashMap<Integer,URLSet> sets = new HashMap<Integer,URLSet>();
 	private List<String> recommendedBookmarks;
 
 	// Constructor.
-	public Processor (ProcessorMessageListener processorMessengerListener,
+	/**
+     *
+     * @param processorMessengerListener
+     * @param processorThreadStateChangedListener
+     */
+    public Processor (ProcessorMessageListener processorMessengerListener,
 			ProcessorThreadStateChangedListener processorThreadStateChangedListener)  {
 		this.processorMessengerListener=processorMessengerListener;
 		this.processorThreadStateChangedListener=processorThreadStateChangedListener;
@@ -205,7 +220,12 @@ public class Processor {
 	}
 
 	// make this the only place a user is set
- 	public void process(String userName) throws Exception {
+ 	/**
+     *
+     * @param userName
+     * @throws Exception
+     */
+    public void process(String userName) throws Exception {
  		changeProcessorThreadState(ProcessorThread.ProcessorThreadState.PROCESSING);
  		Connection conn;
 		Class.forName("org.hsqldb.jdbcDriver");		
@@ -260,7 +280,11 @@ public class Processor {
     	changeProcessorThreadState(ProcessorThread.ProcessorThreadState.STOPPED);
     }
  	
- 	public void updateURLs(Connection conn)
+ 	/**
+     *
+     * @param conn
+     */
+    public void updateURLs(Connection conn)
  	{
 		HashMap<Integer,Url> tempUrls= getURLs(conn);
 		Collection<Url> tempUrlsCollection=tempUrls.values();
@@ -273,12 +297,20 @@ public class Processor {
  		}
  	}
  	
- 	public List<String> getRecommedation()
+ 	/**
+     *
+     * @return
+     */
+    public List<String> getRecommedation()
  	{
  		return recommendedBookmarks;
  	}
  	
- 	public void updateUsers(Connection conn)
+ 	/**
+     *
+     * @param conn
+     */
+    public void updateUsers(Connection conn)
  	{
 		HashMap<Integer,User> users= getUsers(conn);
 		Collection<User> tempUsers=users.values();
@@ -291,7 +323,11 @@ public class Processor {
  		}
  	}
  	
- 	public void updateSets(Connection conn)
+ 	/**
+     *
+     * @param conn
+     */
+    public void updateSets(Connection conn)
  	{
 		HashMap<Integer,URLSet> tempSets= getSets(conn);
 		Collection<URLSet> tempSetsCollection=tempSets.values();
@@ -304,7 +340,12 @@ public class Processor {
  		}
  	}
  	
- 	public User getUser(String userName)
+ 	/**
+     *
+     * @param userName
+     * @return
+     */
+    public User getUser(String userName)
  	{
  		for(int i=0;i<linkedUsers.values().size();i++)
  		{
@@ -317,7 +358,12 @@ public class Processor {
  		return null;
  	}
  	
- 	public Url getURL(String urlString)
+ 	/**
+     *
+     * @param urlString
+     * @return
+     */
+    public Url getURL(String urlString)
  	{
  		Url url=null;
  		
@@ -428,7 +474,10 @@ public class Processor {
 		
 	}
 	
-	public void computeSetRanks()
+	/**
+     *
+     */
+    public void computeSetRanks()
 	{
 		int maxUsers=maxSetsUserCount();
 		int maxURLCount=maxSetsURLCount();
@@ -442,7 +491,11 @@ public class Processor {
 		}
 	}
 	
-	public int maxSetsUserCount()
+	/**
+     *
+     * @return
+     */
+    public int maxSetsUserCount()
 	{
 		Collection<URLSet> tempSets=sets.values();
 		Iterator<URLSet> tempSetsIterator=tempSets.iterator();
@@ -459,7 +512,11 @@ public class Processor {
 		return max;
 	}
 	
-	public int maxSetsURLCount()
+	/**
+     *
+     * @return
+     */
+    public int maxSetsURLCount()
 	{
 		Collection<URLSet> tempSets=sets.values();
 		Iterator<URLSet> tempSetsIterator=tempSets.iterator();
@@ -476,7 +533,13 @@ public class Processor {
 		return max;
 	}
 	
-	public List<Integer> getCommonBookmarks(List<Integer> bookmarkIDList1, List<Integer> bookmarkIDList2)  
+	/**
+     *
+     * @param bookmarkIDList1
+     * @param bookmarkIDList2
+     * @return
+     */
+    public List<Integer> getCommonBookmarks(List<Integer> bookmarkIDList1, List<Integer> bookmarkIDList2)  
 	{
 		List<Integer> commonBookmarkIDs= new ArrayList<Integer>();
 
@@ -499,12 +562,20 @@ public class Processor {
 	
 	
 	
-	public void sendMessage(String message)
+	/**
+     *
+     * @param message
+     */
+    public void sendMessage(String message)
 	{
 		processorMessengerListener.messageSent(new ProcessorMessageEvent(this,message));	
 	}
 	
-	public void changeProcessorThreadState(ProcessorThread.ProcessorThreadState state)
+	/**
+     *
+     * @param state
+     */
+    public void changeProcessorThreadState(ProcessorThread.ProcessorThreadState state)
 	{
 		processorThreadStateChangedListener.processorThreadstateChanged(new ProcessorThreadStateChangedEvent(this,
 				state));
@@ -589,7 +660,11 @@ public class Processor {
 		}
 	}
 	
-	public void getBookmarksForSet(int setID)
+	/**
+     *
+     * @param setID
+     */
+    public void getBookmarksForSet(int setID)
 	{
  		changeProcessorThreadState(ProcessorThread.ProcessorThreadState.PROCESSING);
  		User tempUser;
@@ -693,7 +768,12 @@ public class Processor {
 		}
 	}
 
-	public void print(Node node, String indent) {
+	/**
+     *
+     * @param node
+     * @param indent
+     */
+    public void print(Node node, String indent) {
         System.out.println(indent+node.getClass().getName()+node.getNodeName() );
         Node child = node.getFirstChild();
         while (child != null) {
@@ -702,7 +782,12 @@ public class Processor {
         }
     }
 	
-	public HashMap<Integer,User> getUsers(Connection conn) {
+	/**
+     *
+     * @param conn
+     * @return
+     */
+    public HashMap<Integer,User> getUsers(Connection conn) {
 		
 		//update("CREATE TABLE UserTable ( UserID INTEGER IDENTITY, UserName VARCHAR(256), SetsUpdated DATE)", conn);
 		//update("CREATE TABLE URLUsersTabel ( URLID INTEGER, UserID INTEGER )", conn);
@@ -752,7 +837,12 @@ public class Processor {
 		return linkedUsers;
 	}
 	
-	public HashMap<Integer,Url> getURLs(Connection conn)
+	/**
+     *
+     * @param conn
+     * @return
+     */
+    public HashMap<Integer,Url> getURLs(Connection conn)
 	{
 //		update("CREATE TABLE URLTabel ( URLID INTEGER IDENTITY, URL VARCHAR(1000), UsersPageURL VARCHAR(1000))", conn);
         int tempURLID=0;
@@ -794,7 +884,12 @@ public class Processor {
 		return urls;
 	}
 	
-	public HashMap<Integer,URLSet> getSets(Connection conn){
+	/**
+     *
+     * @param conn
+     * @return
+     */
+    public HashMap<Integer,URLSet> getSets(Connection conn){
 
 		ResultSet setsResultSet = null;
 		ResultSet urlsResultSet = null;
@@ -861,6 +956,11 @@ public class Processor {
 	}
 
 	
+    /**
+     *
+     * @param conn
+     * @throws SQLException
+     */
     public void shutdown(Connection conn) throws SQLException {
 
         Statement st = conn.createStatement();
@@ -872,6 +972,11 @@ public class Processor {
         conn.close();    // if there are no other open connection
     }
     
+    /**
+     *
+     * @param conn
+     * @return
+     */
     public String getLastUser(Connection conn)
     {
 

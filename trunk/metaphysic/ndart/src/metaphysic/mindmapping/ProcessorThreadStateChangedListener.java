@@ -2,6 +2,14 @@ package metaphysic.mindmapping;
 
 import java.util.EventListener;
 
+/**
+ *
+ * @author justin
+ */
 public interface ProcessorThreadStateChangedListener extends EventListener {
-	public abstract void processorThreadstateChanged(ProcessorThreadStateChangedEvent e);
+	/**
+     *
+     * @param e
+     */
+    public abstract void processorThreadstateChanged(ProcessorThreadStateChangedEvent e);
 }

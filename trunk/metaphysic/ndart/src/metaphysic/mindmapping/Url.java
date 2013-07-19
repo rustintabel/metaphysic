@@ -1,4 +1,4 @@
-package reaping;
+package metaphysic.mindmapping;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -8,14 +8,29 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.sql.PreparedStatement;
 
+/**
+ *
+ * @author justin
+ */
 public class Url {
 	private String url;
 	private int URLId=0;
 	private String usersPageURL;
-	public boolean needsUpdateingInDatabase=true;
+	/**
+     *
+     */
+    public boolean needsUpdateingInDatabase=true;
 	private int savedByHowMAnyOtherUSers=0;
 
-	public Url (String url,String usersPageURL, int URLID,int savedByHowMAnyOtherUSers,boolean needsUpdateingInDatabase) {
+	/**
+     *
+     * @param url
+     * @param usersPageURL
+     * @param URLID
+     * @param savedByHowMAnyOtherUSers
+     * @param needsUpdateingInDatabase
+     */
+    public Url (String url,String usersPageURL, int URLID,int savedByHowMAnyOtherUSers,boolean needsUpdateingInDatabase) {
 		this.url = url;
 		this.URLId=URLID;
 		this.usersPageURL=usersPageURL;
@@ -23,31 +38,56 @@ public class Url {
 		this.needsUpdateingInDatabase=needsUpdateingInDatabase;
 	}
 	
-	public int getURLID()
+	/**
+     *
+     * @return
+     */
+    public int getURLID()
 	{
 		return this.URLId;
 	}
 	
 	
-	public String getUsersPageURL()
+	/**
+     *
+     * @return
+     */
+    public String getUsersPageURL()
 	{
 		return this.usersPageURL;
 	}
 	
-	public int GetHowManyOtherUsersHaveSavedThisURL()
+	/**
+     *
+     * @return
+     */
+    public int GetHowManyOtherUsersHaveSavedThisURL()
 	{
 		return this.savedByHowMAnyOtherUSers;
 	}
 
-	public String getUrl () {
+	/**
+     *
+     * @return
+     */
+    public String getUrl () {
 		return this.url;
 	}
 
-	public void setUrl (String url) {
+	/**
+     *
+     * @param url
+     */
+    public void setUrl (String url) {
 		this.url = url;
 	}
 	
-	public boolean updateInDatabase(Connection conn)
+	/**
+     *
+     * @param conn
+     * @return
+     */
+    public boolean updateInDatabase(Connection conn)
 	{
 //update("CREATE TABLE URLTabel ( URLID INTEGER, URL VARCHAR(1000), UsersPageURL VARCHAR(1000), SavedByHowManyUsers INTEGER)", conn);
 		PreparedStatement ps = null;

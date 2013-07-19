@@ -544,8 +544,45 @@ public class Triangle {
  
     }
  
+    public void orientToEquitorialPlane(boolean[] zzzzza,java.awt.Image image)
+    {
+        this.image=image;
+        for(int i=0;i<dimentions;i++)
+        {
+            if(zzzzza[i]==true)
+            {
+                points[0].coordinates[i]=points[0].coordinates[i];
+                points[1].coordinates[i]=points[1].coordinates[i];
+                points[2].coordinates[i]=points[2].coordinates[i];
+            }
+            else
+            {
+                points[0].coordinates[i]=0;
+                points[1].coordinates[i]=0;
+                points[2].coordinates[i]=0;
+            }
+        }
+    }
     
- 
+    public void orientToQuadrant(boolean[] zzzzza,java.awt.Image image)
+    {
+        this.image=image;
+        for(int i=0;i<dimentions;i++)
+        {
+            if(zzzzza[i]==true)
+            {
+                points[0].coordinates[i]=Math.abs(points[0].coordinates[i]);
+                points[1].coordinates[i]=Math.abs(points[1].coordinates[i]);
+                points[2].coordinates[i]=Math.abs(points[2].coordinates[i]);
+            }
+            else
+            {
+                points[0].coordinates[i]=-1*Math.abs(points[0].coordinates[i]);
+                points[1].coordinates[i]=-1*Math.abs(points[1].coordinates[i]);
+                points[2].coordinates[i]=-1*Math.abs(points[2].coordinates[i]);
+            }
+        }
+    }
     
  
 } 

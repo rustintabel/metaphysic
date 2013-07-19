@@ -11,10 +11,10 @@ import java.util.ArrayList;
  * @author justin
  */
 public class XSpineStrongAnthropicGaliosGroupAsthetic extends SpineStrongAnthropicGaliosGroupAsthetic{
-    RecombinationAsthetic brain;
-    ReproductionAsthetic body;
-    PrintMakingAsthetic senses;
-    ArrayList<Phenomina> phenomina =new ArrayList<Phenomina>();
+    public RecombinationAsthetic brain;
+    public ReproductionAsthetic body;
+    public PrintMakingAsthetic senses;
+    public ArrayList<Phenomina> phenomina =new ArrayList<Phenomina>();
     
     public void addPhenomina(Phenomina newPhenomina)
     {

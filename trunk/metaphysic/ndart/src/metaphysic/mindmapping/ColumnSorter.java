@@ -4,6 +4,10 @@ package metaphysic.mindmapping;
 import java.util.Vector;
 import java.util.*;
 //This comparator is used to sort vectors of data
+/**
+ *
+ * @author justin
+ */
 public class ColumnSorter implements Comparator {
     int colIndex;
     boolean ascending;
@@ -11,6 +15,12 @@ public class ColumnSorter implements Comparator {
         this.colIndex = colIndex;
         this.ascending = ascending;
     }
+    /**
+     *
+     * @param a
+     * @param b
+     * @return
+     */
     public int compare(Object a, Object b) {
         Vector v1 = (Vector)a;
         Vector v2 = (Vector)b;
