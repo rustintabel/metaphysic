@@ -27,10 +27,10 @@ public class PrintMakingAsthetic extends Asthetic {
     //the key here being that stuff made by cells reflect combinations of the actions of thheir organs.
     //organs are as to cells and bodies as this level is to the level below 
     //a recipe is thhe most intuitive example of thhis.
-    public PrintMakingAsthetic PrintMakingAsthetic()
+    public PrintMakingAsthetic()
     {
         
-        return this;
+      
     }
     
  ArrayList getImprintFiles()

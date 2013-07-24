@@ -4,12 +4,12 @@
  */
 package metaphysic.molecules;
 
-import metaphysic.PrintMakingAsthetic;
+import metaphysic.*;
 
 /**
  *
  * @author justin
  */
-public class MolecularPrintMakingPolymerAsthetic extends PrintMakingAsthetic{
+public class MolecularPrintMakingPolymerAsthetic extends SenseRoleSpaceOutsideEdge{
     
 }

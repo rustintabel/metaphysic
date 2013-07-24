@@ -4,12 +4,13 @@
  */
 package metaphysic.quarks;
 
+import metaphysic.BodyInformationFeildTissue;
 import metaphysic.RecombinationAsthetic;
 
 /**
  *
  * @author justin
  */
-public class DownDownQuarkTissueFeildAsthetic extends RecombinationAsthetic{
+public class DownDownQuarkTissueFeildAsthetic extends BodyInformationFeildTissue{
     
 }

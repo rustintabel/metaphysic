@@ -10,5 +10,11 @@ package metaphysic;
  */
 public class YSpineStrongAnthropicOrgansGaliosGroupAsthetic  
 extends YSpineStrongAnthropicGaliosGroupAsthetic{
-    //foot hand foot hand
+        public YSpineStrongAnthropicOrgansGaliosGroupAsthetic(
+            Asthetic senses,Asthetic organ,Asthetic tissue,
+            RecombinationAsthetic heart,ReproductionAsthetic hand,PrintMakingAsthetic foot
+            )
+    {
+       
+    }
 }

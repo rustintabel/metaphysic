@@ -5,11 +5,12 @@
 package metaphysic.quarks;
 
 import metaphysic.PrintMakingAsthetic;
+import metaphysic.SenseInformationFeildTissue;
 
 /**
  *
  * @author justin
  */
-public class ElectronElectronTissueFieldAsthetic extends PrintMakingAsthetic{
+public class ElectronElectronTissueFieldAsthetic extends SenseInformationFeildTissue{
     
 }

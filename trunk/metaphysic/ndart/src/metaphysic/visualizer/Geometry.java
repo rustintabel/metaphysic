@@ -9,7 +9,7 @@ import java.awt.image.*;
 import java.awt.*;
 import javax.imageio.*;
 import java.io.*;
-import metaphysic.GeneralStrongAnthropicGaliosGroupFractle;
+import metaphysic.*;
  
 public class Geometry {
  
@@ -32,18 +32,25 @@ public class Geometry {
     public static void main(String[] args)
     {
         
-        GeneralStrongAnthropicGaliosGroupFractle metaPhysic = 
+       GeneralStrongAnthropicGaliosGroupFractle metaPhysic = 
                 new GeneralStrongAnthropicGaliosGroupFractle();
         
       //  LifestyleProjectionOfStrongAnthropicGaliosGroup dayPlanner=
         //       new LifestyleProjectionOfStrongAnthropicGaliosGroup();
-
-       
-        CrystalBall crystalBall=new CrystalBall
-                ("cells","YSpineStrongAnthropicBrainSpineGaliosGroupAsthetic",
+       StrongAnthropicGaliosGroup root=new StrongAnthropicGaliosGroup(new RecombinationAsthetic(),new ReproductionAsthetic(),new PrintMakingAsthetic(),
                 metaPhysic);
+       root.ceiling=metaPhysic.quarks;
+       StrongAnthropicGaliosGroup currentSymmetryShell=root; 
        
-        crystalBall.GenerateVideo(0.4);
+       while(currentSymmetryShell.ceiling!=null)
+       {
+         currentSymmetryShell=currentSymmetryShell.ceiling;
+         System.out.println(currentSymmetryShell.name);
+         YCrystalBall crystalBall=new YCrystalBall
+                (currentSymmetryShell.brainSpine,"YSpineStrongAnthropicBrainSpineGaliosGroupAsthetic",currentSymmetryShell.name);        
+         crystalBall.GenerateVideo(0.1);
+         
+       }
     }
 
     

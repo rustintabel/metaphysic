@@ -8,18 +8,22 @@ import java.util.ArrayList;
  *
  * @author justin
  */
-public class XSpineStrongAnthropicSymetryShellGaliosGroupAsthetic 
-extends XSpineStrongAnthropicGaliosGroupAsthetic{
-
-    public void XSpineStrongAnthropicSymetryShellGaliosGroupAsthetic()
+public class XSpineStrongAnthropicSymetryShellGaliosGroupAsthetic extends 
+        XSpineStrongAnthropicGaliosGroupAsthetic{
+    
+    
+    public XSpineStrongAnthropicSymetryShellGaliosGroupAsthetic(
+            Asthetic brain,Asthetic body,Asthetic senses,
+            RecombinationAsthetic heart,ReproductionAsthetic hand,PrintMakingAsthetic foot)
     {
-        Phenomina hand=new Phenomina();
-        hand.setName("Hand Phenomina");
+        super(brain,body,senses,heart,hand,foot);
+        Phenomina handVector=new Phenomina();
+        handVector.setName("Hand Phenomina");
         
-        phenomina.add(hand);
+        phenomina.add(handVector);
         
-        Phenomina eye=new Phenomina();
-        eye.setName("Eye Phenomina");
-        phenomina.add(eye);
+        Phenomina eyeVector=new Phenomina();
+        eyeVector.setName("Eye Phenomina");
+        phenomina.add(eyeVector);
     }
 }

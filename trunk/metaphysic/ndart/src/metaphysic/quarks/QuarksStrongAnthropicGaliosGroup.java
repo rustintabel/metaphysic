@@ -5,7 +5,11 @@
 package metaphysic.quarks;
 
 import java.util.ArrayList;
+import metaphysic.GeneralStrongAnthropicGaliosGroupFractle;
 import metaphysic.Phenomina;
+import metaphysic.PrintMakingAsthetic;
+import metaphysic.RecombinationAsthetic;
+import metaphysic.ReproductionAsthetic;
 import metaphysic.StrongAnthropicGaliosGroup;
 
 /**
@@ -15,15 +19,15 @@ import metaphysic.StrongAnthropicGaliosGroup;
 public class QuarksStrongAnthropicGaliosGroup extends StrongAnthropicGaliosGroup{
    
                     
-    public ArrayList<SurfaceCovalentShellProbabilityDistributionFunctionAsthetic> 
+    public ArrayList<CenterOfGravityAsthetic> 
             SurfaceCovalentShellProbabilityDistributionFunctionAstheticTypes
-            =new ArrayList<SurfaceCovalentShellProbabilityDistributionFunctionAsthetic>();
-    public ArrayList<ElectronProbabilityDistributionFunctionAsthetic> 
+            =new ArrayList<CenterOfGravityAsthetic>();
+    public ArrayList<ElectronsProbabilityDistributionFunctionAsthetic> 
             ElectronProbabilityDistributionFunctionAstheticTypes
-            =new ArrayList<ElectronProbabilityDistributionFunctionAsthetic>();
-    public ArrayList<NuclearProbabilityDistributionFunctionAsthetic> 
+            =new ArrayList<ElectronsProbabilityDistributionFunctionAsthetic>();
+    public ArrayList<VanderwallsAsthetic> 
             NuclearProbabilityDistributionFunctionAstheticTypes
-            =new ArrayList<NuclearProbabilityDistributionFunctionAsthetic>();
+            =new ArrayList<VanderwallsAsthetic>();
     
     public ArrayList<CovalentShellAsthetic> CovalentShellAstheticTypes
             =new ArrayList<CovalentShellAsthetic>();
@@ -39,20 +43,42 @@ public class QuarksStrongAnthropicGaliosGroup extends StrongAnthropicGaliosGroup
     public ArrayList<DownDownQuarkTissueFeildAsthetic> DownDownQuarkTissueFeildAstheticTypes
             =new ArrayList<DownDownQuarkTissueFeildAsthetic>();
     
-    public void QuarksStrongAnthropicGaliosGroup()
+    public QuarksStrongAnthropicGaliosGroup(            
+            GeneralStrongAnthropicGaliosGroupFractle generalInformationFeild
+            )
     {
-        Phenomina handVector=new Phenomina();
-        handVector.setName("Hand Phenomina");
-        handVector.automorphicAdd(this.CellRecombinationAsthetic);
-        handVector.automorphicAdd(this.CellReproductionAsthetic);
-        symetryShell.addPhenomina(handVector);
+        super(
+                new RecombinationAsthetic(),new ReproductionAsthetic(),new PrintMakingAsthetic(),
+                generalInformationFeild
+                );
+        name="quarks";
         
         
-        Phenomina eyeVector=new Phenomina();
-        eyeVector.setName("Eye Phenomina");
-        eyeVector.automorphicAdd(this.CellRecombinationAsthetic);
-        eyeVector.automorphicAdd(this.CellReproductionAsthetic);
-        symetryShell.addPhenomina(eyeVector);
+                    //Add the 9 canonicle asthetics to a matrix.
+            asthetics[0][0]=brainRoleSpaceOutsideEdge=new CenterOfGravityAsthetic();//through brownian motion and angular momentum
+            asthetics[0][1]=bodyRoleSpaceOutsideEdge=new VanderwallsAsthetic();
+            asthetics[0][2]=sensesRoleSpaceOutsideEdge=new CovalentShellAsthetic();
+            
+            asthetics[1][0]=brain=new NeutronAsthetic();
+            asthetics[1][1]=body=new ProtonAsthetic();
+            asthetics[1][2]=senses=new ElectronsProbabilityDistributionFunctionAsthetic();
+            
+            asthetics[2][0]=brainInformationFeildTissue=new UpUpQuarkTissueFieldAshetic();
+            asthetics[2][1]=bodyInformationFeildTissue=new DownDownQuarkTissueFeildAsthetic();
+            asthetics[2][2]=senseInformationFeildTissue=new ElectronElectronTissueFieldAsthetic();
+            
+      //  Phenomina handVector=new Phenomina();
+       // handVector.setName("Hand Phenomina");
+       // handVector.automorphicAdd(this.CellRecombinationAsthetic);
+       // handVector.automorphicAdd(this.CellReproductionAsthetic);
+       // symetryShell.addPhenomina(handVector);
+        
+        
+        //Phenomina eyeVector=new Phenomina();
+        //eyeVector.setName("Eye Phenomina");
+        //eyeVector.automorphicAdd(this.CellRecombinationAsthetic);
+        //eyeVector.automorphicAdd(this.CellReproductionAsthetic);
+        //symetryShell.addPhenomina(eyeVector);
     }
 
             

@@ -4,12 +4,13 @@
  */
 package metaphysic.quarks;
 
+import metaphysic.BrainInformationFeildTissue;
 import metaphysic.ReproductionAsthetic;
 
 /**
  *
  * @author justin
  */
-public class UpUpQuarkTissueFieldAshetic extends ReproductionAsthetic{
+public class UpUpQuarkTissueFieldAshetic extends BrainInformationFeildTissue{
     
 }

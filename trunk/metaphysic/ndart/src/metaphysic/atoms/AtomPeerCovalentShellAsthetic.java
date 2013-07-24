@@ -5,19 +5,18 @@
 package metaphysic.atoms;
 
 import metaphysic.Asthetic;
-import metaphysic.PrintMakingAsthetic;
-import metaphysic.proteins.ProteinGeneAsthetic;
-import metaphysic.proteins.ProteinTertiaryStructureAsthetic;
+import metaphysic.*;
+
 
 /**
  *
  * @author justin
  */
-public class AtomPeerCovalentShellAsthetic extends PrintMakingAsthetic{
-        public Asthetic handHumunculous=new ProteinGeneAsthetic();
-    public Asthetic hand=new ProteinGeneAsthetic();
-    public Asthetic eye=new ProteinGeneAsthetic();
-    public Asthetic eyeHumunculous=new ProteinTertiaryStructureAsthetic();
+public class AtomPeerCovalentShellAsthetic extends SenseRoleSpaceOutsideEdge{
+    public Asthetic handHumunculous;
+    public Asthetic hand;
+    public Asthetic eye;
+    public Asthetic eyeHumunculous;
     
 
     

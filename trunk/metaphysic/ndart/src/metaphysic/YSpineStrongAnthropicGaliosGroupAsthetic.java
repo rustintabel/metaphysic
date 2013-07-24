@@ -10,39 +10,36 @@ package metaphysic;
  */
 public class YSpineStrongAnthropicGaliosGroupAsthetic extends SpineStrongAnthropicGaliosGroupAsthetic{
     
-    public Asthetic bodySuperHandHumunculous=new Asthetic();
-    public Asthetic bodySuperHand=new Asthetic();
-    public Asthetic bodySuperEye=new Asthetic();
-    public Asthetic bodySuperEyeHumunnculous=new Asthetic();
+    public Asthetic sensesSuperHandHumunculous=new Asthetic();
+    public Asthetic sensesSuperHand=new Asthetic();
+    public Asthetic sensesSuperEye=new Asthetic();
+    public Asthetic sensesSuperEyeHumunnculous=new Asthetic();
     
-    public Asthetic cellSuperHandHumunculous=new Asthetic();
-    public Asthetic cellSuperHand=new Asthetic();
-    public Asthetic cellSuperEye=new Asthetic();
-    public Asthetic cellSuperEyeHumunnculous=new Asthetic();
+    public Asthetic organSuperHandHumunculous=new Asthetic();
+    public Asthetic organSuperHand=new Asthetic();
+    public Asthetic organSuperEye=new Asthetic();
+    public Asthetic organSuperEyeHumunnculous=new Asthetic();
     
-    public Asthetic senses;
+    public Asthetic tissueSuperHandHumunculous=new Asthetic();
+    public Asthetic tissueSuperHand=new Asthetic();
+    public Asthetic tissueSuperEye=new Asthetic();
+    public Asthetic tissueSuperEyeHumunnculous=new Asthetic();    
+    
+    public Asthetic roleSpace;
     public Asthetic body;
     public Asthetic tissue;
     
-    public void YSpineStrongAnthropicGaliosGroupAsthetic(
-            Asthetic senses,Asthetic organ,Asthetic tissue,
-            RecombinationAsthetic heart,ReproductionAsthetic hand,PrintMakingAsthetic foot)
-    {
-            this.senses=senses;
-            this.body=organ;
-            this.tissue=tissue;
-        
-            this.bodySuperHandHumunculous.handHumunculous=this.cellSuperEye.eye;
-            this.bodySuperHand.hand=this.cellSuperHandHumunculous.handHumunculous;
-            this.bodySuperEye.eye=this.cellSuperEye.eye;
-            this.bodySuperEyeHumunnculous.eyeHumunculous=this.cellSuperEyeHumunnculous.eyeHumunculous;
-            
-            this.cellSuperHandHumunculous.handHumunculous=heart;
-            this.cellSuperHand.hand=hand;
-            this.cellSuperEye.eye=foot;
-            this.cellSuperEyeHumunnculous.eyeHumunculous=heart;
+    //translator circuts: these are the natural modual which is speaking a differant asthetic
+    //language when used one way or the other.
+    //From one row to the one above is flipped and shifted.
+    //When only these quadrants are veiwed the spine can be seen.
+    public Asthetic tissueTranslatorCircut;
+    public Asthetic organTranslatorCircut;
+    public Asthetic sensesTranslatorCircut;
+    
 
-    }
+
+    
     public void addPhenomina(Phenomina newPhenomina)
     {
         boolean phenominaFound=false;

@@ -9,5 +9,11 @@ package metaphysic;
  * @author justin
  */
 public class YSpineStrongAnthropicReceptorsGaliosGroupAsthetic extends YSpineStrongAnthropicGaliosGroupAsthetic{
-    
+    public YSpineStrongAnthropicReceptorsGaliosGroupAsthetic(
+            Asthetic senses,Asthetic organ,Asthetic tissue,
+            RecombinationAsthetic heart,ReproductionAsthetic hand,PrintMakingAsthetic foot
+            )
+    {
+        
+    }
 }

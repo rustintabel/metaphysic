@@ -89,7 +89,7 @@ public class BSPTree {
  
         root=new BSPTreeNode(dimentions);
  
-        root.setRandTriangle();
+        root.setRandTriangle(1);
  
         root.setParent(root);
  
@@ -99,7 +99,7 @@ public class BSPTree {
  
            temp=new BSPTreeNode(dimentions);
  
-           temp.setRandTriangle();
+           temp.setRandTriangle(1);
  
            if(root.addNode(temp))
  
@@ -113,46 +113,52 @@ public class BSPTree {
  
     }
  
-    public void buildTreeFromRandomlyPositionedDisjointImageFiles(CrystalBall crystalBall)
+    public void buildTreeFromRandomlyPositionedDisjointImageFiles(YCrystalBall crystalBall)
  
     {
  
         int nodesSoFar=0;
-        numberOfNodes=crystalBall.northHandHumunculous.length+
-            crystalBall.northHand.length+
-               crystalBall.northEye.length+
-                crystalBall.northEyeHumunculous.length+
-                crystalBall.southHandHumunculous.length+
-                crystalBall.southHand.length+
-                crystalBall.southEye.length+
-                crystalBall.southEyeHumunculous.length;
+        numberOfNodes=crystalBall.northHandHumunculousImages.length+
+            crystalBall.northHandImages.length+
+               crystalBall.northEyeImages.length+
+                crystalBall.northEyeHumunculousImages.length+
+                crystalBall.equatorHandHumunculousImages.length+
+                crystalBall.equatorHandImages.length+
+                crystalBall.equatorEyeImages.length+
+                crystalBall.equatorEyeHumunculousImages.length+
+                crystalBall.southHandHumunculousImages.length+
+                crystalBall.southHandImages.length+
+                crystalBall.southEyeImages.length+
+                crystalBall.southEyeHumunculousImages.length;
  
+        if(crystalBall.northHandHumunculousImages.length==0){numberOfNodes++;}
+        if(crystalBall.northHandImages.length==0){numberOfNodes++;}
+        if(crystalBall.northEyeImages.length==0){numberOfNodes++;}
+        if(crystalBall.northEyeHumunculousImages.length==0){numberOfNodes++;}
+        if(crystalBall.equatorHandHumunculousImages.length==0){numberOfNodes++;}
+        if(crystalBall.equatorHandImages.length==0){numberOfNodes++;}
+        if(crystalBall.equatorEyeImages.length==0){numberOfNodes++;}
+        if(crystalBall.equatorEyeHumunculousImages.length==0){numberOfNodes++;}
+        if(crystalBall.southHandHumunculousImages.length==0){numberOfNodes++;}
+        if(crystalBall.southHandImages.length==0){numberOfNodes++;}
+        if(crystalBall.southEyeImages.length==0){numberOfNodes++;}
+        if(crystalBall.southEyeHumunculousImages.length==0){numberOfNodes++;}
+        
         viewer =new Viewer(dimentions, 1, 1,screenHeight,screenWidth);
  
         BSPTreeNode temp=null;
  
         root=new BSPTreeNode(dimentions);
  
-        root.setRandTriangle();
+        root.setRandTriangle(1);
  
         root.setParent(root);
  
+        
         while(nodesSoFar<numberOfNodes)
- 
         {
- 
            temp=new BSPTreeNode(dimentions);
- 
-           temp.setRandTriangle();
-           
-           if(root.addNode(temp) )
-
-           {
-               
-               crystalBall.getImage(temp.getTriangle());
-                nodesSoFar++;
- 
-           }
+           crystalBall.getImage(root,temp);
  
         } 
  
@@ -172,7 +178,7 @@ public class BSPTree {
  
         root=new BSPTreeNode(dimentions);
  
-        root.setRandTriangle();
+        root.setRandTriangle(1);
  
         root.setParent(root);
  
