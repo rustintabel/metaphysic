@@ -11,9 +11,9 @@ import java.util.*;
 public class SpineStrongAnthropicGaliosGroupAsthetic {
         
     StrongAnthropicGaliosGroup feild;
-    public void SpineStrongAnthropicGaliosGroupAsthetic(StrongAnthropicGaliosGroup galiosGroup)
+    public SpineStrongAnthropicGaliosGroupAsthetic()
     {
-        feild=galiosGroup;
+       
     }
 
 }

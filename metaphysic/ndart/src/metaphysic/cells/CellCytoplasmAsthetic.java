@@ -5,7 +5,7 @@
 package metaphysic.cells;
 
 import metaphysic.Asthetic;
-import metaphysic.ReproductionAsthetic;
+import metaphysic.*;
 import metaphysic.proteins.ProteinGeneAsthetic;
 import metaphysic.proteins.ProteinRNAAsthetic;
 import metaphysic.proteins.ProteinTertiaryStructureAsthetic;
@@ -17,10 +17,10 @@ import metaphysic.proteins.ProteinTertiaryStructureAsthetic;
  * @author justin
  */
 public class CellCytoplasmAsthetic extends ReproductionAsthetic{
-    public Asthetic handHumunculous=new ProteinGeneAsthetic();
-    public Asthetic hand=new ProteinRNAAsthetic() ;
-    public Asthetic eye=new ProteinTertiaryStructureAsthetic();
-    public Asthetic eyeHumunculous=new ProteinGeneAsthetic();
+    public Asthetic handHumunculous;
+    public Asthetic hand;
+    public Asthetic eye;
+    public Asthetic eyeHumunculous;
     public void handHumunculous()
     {
     

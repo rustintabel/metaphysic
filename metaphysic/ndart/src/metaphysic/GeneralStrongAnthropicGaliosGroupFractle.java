@@ -5,7 +5,7 @@
 package metaphysic;
 
 import metaphysic.community.CommunityStrongAnthropicGaliosGroup;
-import metaphysic.organism.OrganismStrongAnthropicGaliosGroup;
+import metaphysic.organisms.OrganismStrongAnthropicGaliosGroup;
 import metaphysic.cells.CellsStrongAnthropicGaliosGroup;
 import metaphysic.proteins.ProteinsStrongAnthropicGaliosGroup;
 import metaphysic.molecules.MolecularStrongAnthropicGaliosGroup;
@@ -34,22 +34,29 @@ public class GeneralStrongAnthropicGaliosGroupFractle
     
     ArrayList<Phenomina> phenomina =new ArrayList<Phenomina>();
     
-//public CommunityStrongAnthropicGaliosGroup community = new CommunityStrongAnthropicGaliosGroup(); 
-//public OrganismStrongAnthropicGaliosGroup organisms =new OrganismStrongAnthropicGaliosGroup();
-//public CellsStrongAnthropicGaliosGroup cells = new CellsStrongAnthropicGaliosGroup();
-//public ProteinsStrongAnthropicGaliosGroup proteins = new ProteinsStrongAnthropicGaliosGroup();
-//public MolecularStrongAnthropicGaliosGroup molecules = new MolecularStrongAnthropicGaliosGroup();
-public AtomsStrongAnthropicGaliosGroup atoms =new AtomsStrongAnthropicGaliosGroup();
-public QuarksStrongAnthropicGaliosGroup quarks=new QuarksStrongAnthropicGaliosGroup();
+    public CommunityStrongAnthropicGaliosGroup community; 
+    public OrganismStrongAnthropicGaliosGroup organisms;
+    public CellsStrongAnthropicGaliosGroup cells;
+    public ProteinsStrongAnthropicGaliosGroup proteins;
+    public MolecularStrongAnthropicGaliosGroup molecules;
+    public AtomsStrongAnthropicGaliosGroup atoms;
+    public QuarksStrongAnthropicGaliosGroup quarks;
 
-    public void GeneralStrongAnthropicGaliosGroupFractle()
+    public GeneralStrongAnthropicGaliosGroupFractle()
     {
-        atoms.multiply(quarks);
-        //molecules.multiply(atoms);
-        //proteins.multiply(molecules);
-        //cells.multiply(proteins);
-        //organisms.multiply(cells);
-        //community.multiply(organisms);
+        quarks=new QuarksStrongAnthropicGaliosGroup(this);
+        atoms=new AtomsStrongAnthropicGaliosGroup(quarks.brain,quarks.body,quarks.senses,this);
+        molecules=new MolecularStrongAnthropicGaliosGroup(atoms.brain,atoms.body,atoms.senses,this);
+        proteins=new ProteinsStrongAnthropicGaliosGroup(molecules.brain,molecules.body,molecules.senses,this);
+        cells=new CellsStrongAnthropicGaliosGroup(proteins.brain,proteins.body,proteins.senses,this);
+        organisms=new OrganismStrongAnthropicGaliosGroup(cells.brain,cells.body,cells.senses,this);
+        community=new CommunityStrongAnthropicGaliosGroup(organisms.brain,organisms.body,organisms.senses,this);
+        quarks.multiply(atoms);
+        atoms.multiply(molecules);
+        molecules.multiply(proteins);
+        proteins.multiply(cells);
+        cells.multiply(organisms);
+        organisms.multiply(community); 
         
         //Phenomina molecularElectricInformationFeild=new Phenomina();
         //molecularElectricInformationFeild.name="Electricity";

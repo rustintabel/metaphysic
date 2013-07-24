@@ -4,13 +4,13 @@
  */
 package metaphysic.atoms;
 
-import metaphysic.RecombinationAsthetic;
+import metaphysic.*;
 
 /**
  *
  * @author justin
  */
-public class AtomNucleousAsthetic extends RecombinationAsthetic{
+public class AtomNucleousAsthetic extends Brain{
     public void handHumunculous()
     {}
     public void hand()

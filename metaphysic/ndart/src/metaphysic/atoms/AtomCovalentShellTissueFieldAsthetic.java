@@ -9,30 +9,27 @@ import metaphysic.atoms.AtomCovalentShellAsthetic;
 import java.util.*;
 import java.util.ArrayList;
 import metaphysic.Asthetic;
-import metaphysic.PrintMakingAsthetic;
+import metaphysic.*;
+import metaphysic.SenseInformationFeildTissue;
 
 /**
  *
  * @author justin
  */
-public class AtomCovalentShellTissueFieldAsthetic extends PrintMakingAsthetic{
+public class AtomCovalentShellTissueFieldAsthetic extends SenseInformationFeildTissue{
     int[] covalentShells ={2,2,4,4,8,8,16,16}; 
     public Asthetic handHumunculous=new AtomNucleousAsthetic();
     public Asthetic hand=new AtomElectronsAsthetic();//if this atom has more than half its covalent shell
-    public Asthetic eye=new AtomCovalentShellAsthetic ();//if the atom has less than half it complimentary shell
+    public Asthetic eye=new AtomCovalentShellAsthetic();//if the atom has less than half it complimentary shell
     public Asthetic eyeHumunculous=new AtomElectronsAsthetic();
     public ArrayList<AtomCovalentShellTissueFieldAsthetic> handsOfOtherAtoms;
     public ArrayList<AtomCovalentShellTissueFieldAsthetic> eyesOfOtherAtoms;
     int numberOfElectrons;
+   
     
-    public void AtomCovalentShellTissueFieldAsthetic()
+    public AtomCovalentShellTissueFieldAsthetic()
     {
-        
-    }
-    
-    public void AtomCovalentShellTissueFieldAsthetic(int numberOfElectrons)
-    {
-        this.numberOfElectrons=numberOfElectrons;
+      
         
     }
     

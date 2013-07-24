@@ -5,7 +5,7 @@
 package metaphysic.cells;
 
 import metaphysic.Asthetic;
-import metaphysic.PrintMakingAsthetic;
+import metaphysic.*;
 import metaphysic.proteins.ProteinGeneAsthetic;
 import metaphysic.proteins.ProteinRNAAsthetic;
 import metaphysic.proteins.ProteinTertiaryStructureAsthetic;
@@ -15,10 +15,10 @@ import metaphysic.proteins.ProteinTertiaryStructureAsthetic;
  * @author justin
  */
 public class CellPeerSurfaceAsthetic extends PrintMakingAsthetic{
-    public Asthetic handHumunculous=new ProteinGeneAsthetic();
-    public Asthetic hand=new ProteinGeneAsthetic();
-    public Asthetic eye=new ProteinRNAAsthetic();
-    public Asthetic eyeHumunculous=new ProteinTertiaryStructureAsthetic();
+    public Asthetic handHumunculous;
+    public Asthetic hand;
+    public Asthetic eye;
+    public Asthetic eyeHumunculous;
     
     public void handHumunculous()
     {}

@@ -4,12 +4,13 @@
  */
 package metaphysic.quarks;
 
+import metaphysic.Body;
 import metaphysic.ReproductionAsthetic;
 
 /**
  *
  * @author justin
  */
-public class ProtonAsthetic extends ReproductionAsthetic{
+public class ProtonAsthetic extends Body{
     
 }

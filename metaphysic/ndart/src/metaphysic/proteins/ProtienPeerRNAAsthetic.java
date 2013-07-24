@@ -5,13 +5,13 @@
 package metaphysic.proteins;
 
 import metaphysic.Asthetic;
-import metaphysic.ReproductionAsthetic;
+import metaphysic.*;
 
 /**
  *
  * @author justin
  */
-public class ProtienPeerRNAAsthetic extends ReproductionAsthetic{
+public class ProtienPeerRNAAsthetic extends BodyRoleSpaceOutsideEdge{
         public Asthetic handHumunculous=new ProteinGeneAsthetic();
     public Asthetic hand=new ProteinGeneAsthetic();
     public Asthetic eye=new ProteinGeneAsthetic();

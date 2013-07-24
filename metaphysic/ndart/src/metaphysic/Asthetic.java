@@ -65,7 +65,7 @@ public class Asthetic {
      * And so a cycle of such vectors consists of four abstract vectors.
      * xy,x-y,-xy,-x-y
      */
-    public void Asthetic(Asthetic handHumunculous,Asthetic hand, Asthetic eye,Asthetic eyeHumunculous)
+    public void addHandsAndEyes(Asthetic handHumunculous,Asthetic hand, Asthetic eye,Asthetic eyeHumunculous)
     {
         this.handHumunculous=handHumunculous;
         this.hand=hand;

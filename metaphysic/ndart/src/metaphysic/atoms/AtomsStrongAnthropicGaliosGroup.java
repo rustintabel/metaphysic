@@ -13,8 +13,21 @@ import metaphysic.atoms.AtomPeerNucleousAsthetic;
 import metaphysic.atoms.AtomPeerElectronsAsthetic;
 import metaphysic.atoms.AtomPeerCovalentShellAsthetic;
 import java.util.ArrayList;
-import metaphysic.Phenomina;
+import metaphysic.GeneralStrongAnthropicGaliosGroupFractle;
+import metaphysic.*;
+import metaphysic.PrintMakingAsthetic;
+import metaphysic.RecombinationAsthetic;
+import metaphysic.ReproductionAsthetic;
 import metaphysic.StrongAnthropicGaliosGroup;
+import metaphysic.quarks.CenterOfGravityAsthetic;
+import metaphysic.quarks.CovalentShellAsthetic;
+import metaphysic.quarks.DownDownQuarkTissueFeildAsthetic;
+import metaphysic.quarks.ElectronElectronTissueFieldAsthetic;
+import metaphysic.quarks.ElectronsProbabilityDistributionFunctionAsthetic;
+import metaphysic.quarks.NeutronAsthetic;
+import metaphysic.quarks.ProtonAsthetic;
+import metaphysic.quarks.UpUpQuarkTissueFieldAshetic;
+import metaphysic.quarks.VanderwallsAsthetic;
 /**
  *
  * @author justin
@@ -44,31 +57,49 @@ public class AtomsStrongAnthropicGaliosGroup extends StrongAnthropicGaliosGroup{
     public ArrayList<AtomNuclearTissueFieldAsthetic> atomNuclearTissueFieldAstheticTypes
             =new ArrayList<AtomNuclearTissueFieldAsthetic>();
     
-    public void AtomsStrongAnthropicGaliosGroup()
+    public AtomsStrongAnthropicGaliosGroup(
+            RecombinationAsthetic heart,
+            ReproductionAsthetic hand,
+            PrintMakingAsthetic foot,            
+            GeneralStrongAnthropicGaliosGroupFractle generalInformationFeild
+            )
     {
+        super(heart,hand,foot,generalInformationFeild);
+        name="atoms";
         
-        
-        Phenomina handVector=new Phenomina();
-        handVector.setName("Hand Phenomina");
-        handVector.automorphicAdd(this.CellRecombinationAsthetic);
-        handVector.automorphicAdd(this.CellReproductionAsthetic);
-        symetryShell.addPhenomina(handVector);
-        
-        
-        Phenomina eyeVector=new Phenomina();
-        eyeVector.setName("Eye Phenomina");
-        eyeVector.automorphicAdd(this.CellRecombinationAsthetic);
-        eyeVector.automorphicAdd(this.CellReproductionAsthetic);
-        symetryShell.addPhenomina(eyeVector);
-        
-        for(int i=1;i<118;i++)
-        {
+            asthetics[0][0]=brainRoleSpaceOutsideEdge=new AtomPeerNucleousAsthetic();//through brownian motion and angular momentum
+            asthetics[0][1]=bodyRoleSpaceOutsideEdge=new AtomPeerElectronsAsthetic();
+            asthetics[0][2]=sensesRoleSpaceOutsideEdge=new AtomPeerCovalentShellAsthetic();
             
-            covalentShellTissueFeildTypes.add(new AtomCovalentShellTissueFieldAsthetic());
-            atomElectronsTissueFieldAstheticTypes.add(new  AtomElectronTissueFieldAsthetic());
-            atomNuclearTissueFieldAstheticTypes.add(new  AtomNuclearTissueFieldAsthetic());
+            asthetics[1][0]=brain=new AtomNucleousAsthetic();
+            asthetics[1][1]=body=new AtomElectronsAsthetic();
+            asthetics[1][2]=senses=new AtomCovalentShellAsthetic();
             
-        }
+            asthetics[2][0]=brainInformationFeildTissue=new AtomNuclearTissueFieldAsthetic();
+            asthetics[2][1]=bodyInformationFeildTissue=new AtomElectronTissueFieldAsthetic();
+            asthetics[2][2]=senseInformationFeildTissue=new AtomCovalentShellTissueFieldAsthetic();
+        
+        //Phenomina handVector=new Phenomina();
+        //handVector.setName("Hand Phenomina");
+        //handVector.automorphicAdd(this.CellRecombinationAsthetic);
+        //handVector.automorphicAdd(this.CellReproductionAsthetic);
+        //symetryShell.addPhenomina(handVector);
+        
+        
+        //Phenomina eyeVector=new Phenomina();
+        //eyeVector.setName("Eye Phenomina");
+        //eyeVector.automorphicAdd(this.CellRecombinationAsthetic);
+        //eyeVector.automorphicAdd(this.CellReproductionAsthetic);
+        //symetryShell.addPhenomina(eyeVector);
+        
+        //for(int i=1;i<118;i++)
+        //{
+            
+          //  covalentShellTissueFeildTypes.add(new AtomCovalentShellTissueFieldAsthetic(i));
+          //  atomElectronsTissueFieldAstheticTypes.add(new  AtomElectronTissueFieldAsthetic());
+          //  atomNuclearTissueFieldAstheticTypes.add(new  AtomNuclearTissueFieldAsthetic());
+            
+        //}
     
     }
     

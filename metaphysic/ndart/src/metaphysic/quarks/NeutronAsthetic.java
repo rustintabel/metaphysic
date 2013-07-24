@@ -4,12 +4,13 @@
  */
 package metaphysic.quarks;
 
+import metaphysic.Brain;
 import metaphysic.RecombinationAsthetic;
 
 /**
  *
  * @author justin
  */
-public class NeutronAsthetic extends RecombinationAsthetic{
+public class NeutronAsthetic extends Brain{
     
 }

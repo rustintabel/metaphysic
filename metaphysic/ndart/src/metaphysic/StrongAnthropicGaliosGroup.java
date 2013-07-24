@@ -41,79 +41,40 @@ public class StrongAnthropicGaliosGroup {
         public StrongAnthropicGaliosGroup ceiling=null;
 
         public Asthetic[][] asthetics=new Asthetic[3][3];
+        
+        public String name="";
             
     
-            public RecombinationAsthetic CellPeerRecombinationAsthetic;
-            public ReproductionAsthetic CellPeerReproductionAsthetic;
-            public PrintMakingAsthetic CellPeerPrintMakingAsthetic;
+            public BrainRoleSpaceOutsideEdge brainRoleSpaceOutsideEdge;
+            public BodyRoleSpaceOutsideEdge bodyRoleSpaceOutsideEdge;
+            public SenseRoleSpaceOutsideEdge sensesRoleSpaceOutsideEdge;
             
-            public RecombinationAsthetic CellRecombinationAsthetic;
-            public ReproductionAsthetic CellReproductionAsthetic;
-            public PrintMakingAsthetic CellPrintMakingAsthetic;
+            public Brain brain;
+            public Body body;
+            public Senses senses;
             
-            public RecombinationAsthetic CellTissueRecombinationAsthetic;
-            public ReproductionAsthetic CellTissueReproductionAsthetic;
-            public PrintMakingAsthetic CellTissuePrintMakingAsthetic ;
+            public BrainInformationFeildTissue brainInformationFeildTissue;
+            public BodyInformationFeildTissue bodyInformationFeildTissue;
+            public SenseInformationFeildTissue senseInformationFeildTissue ;
             
-            public XSpineStrongAnthropicSensesGaliosGroupAsthetic spineSenses
-                    =new XSpineStrongAnthropicSensesGaliosGroupAsthetic();
-            public XSpineStrongAnthropicSymetryShellGaliosGroupAsthetic symetryShell
-                    =new XSpineStrongAnthropicSymetryShellGaliosGroupAsthetic();
-            public XSpineStrongAnthropicTissueFeildGaliosGroupAsthetic spineTissueField
-                    =new XSpineStrongAnthropicTissueFeildGaliosGroupAsthetic();
+            public XSpineStrongAnthropicSensesGaliosGroupAsthetic spineSenses;
+            public XSpineStrongAnthropicSymetryShellGaliosGroupAsthetic symetryShell;
+            public XSpineStrongAnthropicTissueFeildGaliosGroupAsthetic spineTissueField;
                    
-            public YSpineStrongAnthropicBrainSpineGaliosGroupAsthetic brainSpine
-                    =new YSpineStrongAnthropicBrainSpineGaliosGroupAsthetic();
-            public YSpineStrongAnthropicOrgansGaliosGroupAsthetic spineOrgans
-                    =new YSpineStrongAnthropicOrgansGaliosGroupAsthetic();
-            public YSpineStrongAnthropicReceptorsGaliosGroupAsthetic spineReceptors
-                    =new YSpineStrongAnthropicReceptorsGaliosGroupAsthetic();
+            public YSpineStrongAnthropicBrainSpineGaliosGroupAsthetic brainSpine;
+            public YSpineStrongAnthropicOrgansGaliosGroupAsthetic spineOrgans;
+            public YSpineStrongAnthropicReceptorsGaliosGroupAsthetic spineReceptors;
     
-    void StrongAnthropicGaliosGroup(
-            RecombinationAsthetic CellPeerRecombinationAsthetic,
-            ReproductionAsthetic CellPeerReproductionAsthetic,
-            PrintMakingAsthetic CellPeerPrintMakingAsthetic,
-            
-            RecombinationAsthetic CellRecombinationAsthetic,
-            ReproductionAsthetic CellReproductionAsthetic,
-            PrintMakingAsthetic CellPrintMakingAsthetic,
-            
-            RecombinationAsthetic CellTissueRecombinationAsthetic,
-            ReproductionAsthetic CellTissueReproductionAsthetic,
-            PrintMakingAsthetic CellTissuePrintMakingAsthetic,
+    public StrongAnthropicGaliosGroup(
+            RecombinationAsthetic heart,
+            ReproductionAsthetic hand,
+            PrintMakingAsthetic foot,            
             GeneralStrongAnthropicGaliosGroupFractle generalInformationFeild
             )
     {
         this.generalInformationFeild=generalInformationFeild;
-        
-            this.CellPeerRecombinationAsthetic=CellPeerRecombinationAsthetic;
-            this.CellPeerReproductionAsthetic=CellPeerReproductionAsthetic;
-            this.CellPeerPrintMakingAsthetic=CellPeerPrintMakingAsthetic;
-            
-            this.CellRecombinationAsthetic=CellRecombinationAsthetic;
-            this.CellReproductionAsthetic=CellReproductionAsthetic;
-            this.CellPrintMakingAsthetic=CellPrintMakingAsthetic;
-            
-            this.CellTissueRecombinationAsthetic=CellTissueRecombinationAsthetic;
-            this.CellTissueReproductionAsthetic=CellTissueReproductionAsthetic;
-            this.CellTissuePrintMakingAsthetic=CellTissuePrintMakingAsthetic;
             
             
-            //Add the 9 canonicle asthetics to an array.
-            asthetics[0][0]=CellPeerRecombinationAsthetic;
-            asthetics[0][1]=CellPeerReproductionAsthetic;
-            asthetics[0][2]=CellPeerPrintMakingAsthetic;
-            
-            asthetics[1][0]=CellRecombinationAsthetic;
-            asthetics[1][1]=CellReproductionAsthetic;
-            asthetics[1][2]=CellPrintMakingAsthetic;
-            
-            asthetics[2][0]=CellTissueRecombinationAsthetic;
-            asthetics[2][1]=CellTissueReproductionAsthetic;
-            asthetics[2][2]=CellTissuePrintMakingAsthetic;
-            
- 
-                   
     //Of all the quadrants of all the three fundamental asthetics mirrored at each symetry shell.
     //two phenomina are repeated. Analogsly they are hands and eyes. occupying the same eight
     //quadrants. And a map can be made of this. This is the composistion of mebrane information 
@@ -143,45 +104,9 @@ public class StrongAnthropicGaliosGroup {
             //which is a galios group as these automorphisms are composed into tissues and organs
             //which feilds in which informmation flows freely.
             
-                        //Brain
-            //eye for an eye
-            
-            this.CellPeerRecombinationAsthetic.handHumunculous=this.CellPrintMakingAsthetic;
-            this.CellPeerRecombinationAsthetic.hand=this.CellRecombinationAsthetic;
-            this.CellPeerRecombinationAsthetic.eye=this.CellReproductionAsthetic;
-            this.CellPeerRecombinationAsthetic.eyeHumunculous=this.CellRecombinationAsthetic;
-            
-            
-            this.CellPeerReproductionAsthetic.handHumunculous=this.CellReproductionAsthetic;
-            this.CellPeerReproductionAsthetic.hand=this.CellPrintMakingAsthetic;
-            this.CellPeerReproductionAsthetic.eye=this.CellReproductionAsthetic;
-            this.CellPeerReproductionAsthetic.eyeHumunculous=this.CellPrintMakingAsthetic;   
-            
-            
-            this.CellPeerPrintMakingAsthetic.handHumunculous=this.CellPrintMakingAsthetic;
-            this.CellPeerPrintMakingAsthetic.hand=this.CellRecombinationAsthetic;
-            this.CellPeerPrintMakingAsthetic.eye=this.CellPrintMakingAsthetic;
-            this.CellPeerPrintMakingAsthetic.eyeHumunculous=this.CellRecombinationAsthetic;
-            
-            
-            ////////////////////////////////////////////////////////////////////////////
-            
-            //this.CellRecombinationAsthetic.eye=this.CellTissueRecombinationAsthetic;
-            this.CellRecombinationAsthetic.handHumunculous=this.CellTissueRecombinationAsthetic;
-            this.CellRecombinationAsthetic.hand=this.CellTissueReproductionAsthetic;
-            this.CellRecombinationAsthetic.eye=this.CellTissuePrintMakingAsthetic;
-            this.CellRecombinationAsthetic.eyeHumunculous=this.CellTissueRecombinationAsthetic;
-            
-            
-            this.CellReproductionAsthetic.handHumunculous=this.CellTissuePrintMakingAsthetic;
-            this.CellReproductionAsthetic.hand=this.CellTissueReproductionAsthetic;
-            this.CellReproductionAsthetic.eye=this.CellTissueReproductionAsthetic;
-            this.CellReproductionAsthetic.eyeHumunculous=this.CellTissuePrintMakingAsthetic;  
-            
-            this.CellPrintMakingAsthetic.handHumunculous=this.CellTissueRecombinationAsthetic;
-            this.CellPrintMakingAsthetic.hand=this.CellTissuePrintMakingAsthetic;
-            this.CellPrintMakingAsthetic.eye=this.CellTissuePrintMakingAsthetic;
-            this.CellPrintMakingAsthetic.eyeHumunculous=this.CellTissueRecombinationAsthetic; 
+        brainSpine=new YSpineStrongAnthropicBrainSpineGaliosGroupAsthetic
+                (this.brainRoleSpaceOutsideEdge,this.brain,
+                this.brainInformationFeildTissue,heart,hand,foot);
             
     }
     /*
@@ -190,6 +115,7 @@ public class StrongAnthropicGaliosGroup {
     public StrongAnthropicGaliosGroup multiply(StrongAnthropicGaliosGroup ceiling)
     {
         this.ceiling=ceiling;
+        
         
         //attach tissues of ceiling 
         //set their hands to the natural modullarity of this symetry shell

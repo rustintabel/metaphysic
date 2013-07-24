@@ -4,12 +4,12 @@
  */
 package metaphysic.molecules;
 
-import metaphysic.ReproductionAsthetic;
+import metaphysic.*;
 
 /**
  *
  * @author justin
  */
-public class MolecularReproductionPolymerAsthetic extends ReproductionAsthetic{
+public class MolecularReproductionPolymerAsthetic extends BodyRoleSpaceOutsideEdge{
     
 }

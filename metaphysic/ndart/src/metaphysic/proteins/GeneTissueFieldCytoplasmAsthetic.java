@@ -4,20 +4,18 @@
  */
 package metaphysic.proteins;
 
-import metaphysic.Asthetic;
-import metaphysic.ReproductionAsthetic;
-import metaphysic.proteins.ProteinGeneAsthetic;
-import metaphysic.proteins.ProteinTertiaryStructureAsthetic;
+import metaphysic.*;
+import metaphysic.proteins.*;
 
 /**
  *
  * @author justin
  */
-public class GeneTissueFieldCytoplasmAsthetic extends ReproductionAsthetic{
-            public Asthetic handHumunculous=new ProteinGeneAsthetic();
-    public Asthetic hand=new ProteinGeneAsthetic();
-    public Asthetic eye=new ProteinGeneAsthetic();
-    public Asthetic eyeHumunculous=new ProteinTertiaryStructureAsthetic();
+public class GeneTissueFieldCytoplasmAsthetic extends BodyInformationFeildTissue{
+    public Asthetic handHumunculous;
+    public Asthetic hand;
+    public Asthetic eye;
+    public Asthetic eyeHumunculous;
     
 
     

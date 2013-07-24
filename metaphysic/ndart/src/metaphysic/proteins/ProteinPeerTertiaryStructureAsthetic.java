@@ -5,17 +5,17 @@
 package metaphysic.proteins;
 
 import metaphysic.Asthetic;
-import metaphysic.PrintMakingAsthetic;
+import metaphysic.*;
 
 /**
  *
  * @author justin
  */
-public class ProteinPeerTertiaryStructureAsthetic extends PrintMakingAsthetic{
-        public Asthetic handHumunculous=new ProteinGeneAsthetic();
-    public Asthetic hand=new ProteinGeneAsthetic();
-    public Asthetic eye=new ProteinGeneAsthetic();
-    public Asthetic eyeHumunculous=new ProteinTertiaryStructureAsthetic();
+public class ProteinPeerTertiaryStructureAsthetic extends SenseRoleSpaceOutsideEdge{
+    public Asthetic handHumunculous;
+    public Asthetic hand;
+    public Asthetic eye;
+    public Asthetic eyeHumunculous;
     
 
     

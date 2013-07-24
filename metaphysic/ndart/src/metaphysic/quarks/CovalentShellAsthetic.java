@@ -5,11 +5,12 @@
 package metaphysic.quarks;
 
 import metaphysic.PrintMakingAsthetic;
+import metaphysic.SenseRoleSpaceOutsideEdge;
 
 /**
  *
  * @author justin
  */
-public class CovalentShellAsthetic extends PrintMakingAsthetic{
+public class CovalentShellAsthetic extends SenseRoleSpaceOutsideEdge{
     
 }

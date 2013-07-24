@@ -56,7 +56,7 @@ public class BSPTreeNode {
  
     private Triangle triangle=null;
  
-    
+    private int childrenCount=0;
  
     public BSPTreeNode(int d) 
  
@@ -70,13 +70,13 @@ public class BSPTreeNode {
  
     
  
-    public void setRandTriangle()
+    public void setRandTriangle(double heightByWidth)
  
     {
  
         
  
-        triangle.setRandTriangleAndPossibleHyperPlanes();
+        triangle.setRandTriangleAndPossibleHyperPlanes(heightByWidth);
  
         center=triangle.getHyperplaneCenter();
  
@@ -280,13 +280,16 @@ public class BSPTreeNode {
  
 	    }
  
-	
+	    if(success=true)
+            {
+                childrenCount++;
+            }
  
 	    return success;
  
    } 
  
-       public boolean addNode(BSPTreeNode newNode,CrystalBall crystalBall)
+       public boolean addNode(BSPTreeNode newNode,YCrystalBall crystalBall)
  
    {
  

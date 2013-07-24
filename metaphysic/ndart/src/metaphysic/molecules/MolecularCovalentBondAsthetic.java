@@ -4,12 +4,12 @@
  */
 package metaphysic.molecules;
 
-import metaphysic.RecombinationAsthetic;
+import metaphysic.*;
 
 /**
  *
  * @author justin
  */
-public class MolecularCovalentBondAsthetic extends RecombinationAsthetic{
+public class MolecularCovalentBondAsthetic extends Body{
     
 }

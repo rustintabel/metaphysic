@@ -5,25 +5,24 @@
 package metaphysic.atoms;
 
 import metaphysic.Asthetic;
-import metaphysic.organism.OrganismBrainAsthetic;
-import metaphysic.organism.OrganismSensesAsthetic;
-import metaphysic.PrintMakingAsthetic;
+
+import metaphysic.*;
 
 /**
  *
  * @author justin
  */
-public class AtomCovalentShellAsthetic extends PrintMakingAsthetic{
-    public Asthetic handHumunculous=new OrganismBrainAsthetic();
-    public Asthetic hand=new OrganismSensesAsthetic() ;
-    public Asthetic eye=new OrganismBrainAsthetic();
-    public Asthetic eyeHumunculous=new OrganismSensesAsthetic() ;
+public class AtomCovalentShellAsthetic extends Senses{
+    public Asthetic handHumunculous;
+    public Asthetic hand;
+    public Asthetic eye;
+    public Asthetic eyeHumunculous;
     
     
-    public void AtomCovalentShellAsthetic(Asthetic handHumunculous,Asthetic hand,Asthetic eye,Asthetic eyeHumunculous)
+    public AtomCovalentShellAsthetic()
     {
         
-        super.Asthetic(handHumunculous, hand, eye, eyeHumunculous);
+       
     }
     
     /** 

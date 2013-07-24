@@ -5,19 +5,17 @@
 package metaphysic.atoms;
 
 import metaphysic.Asthetic;
-import metaphysic.proteins.ProteinGeneAsthetic;
-import metaphysic.proteins.ProteinTertiaryStructureAsthetic;
-import metaphysic.ReproductionAsthetic;
+import metaphysic.*;
 
 /**
  *
  * @author justin
  */
-public class AtomPeerElectronsAsthetic extends ReproductionAsthetic{
-        public Asthetic handHumunculous=new ProteinGeneAsthetic();
-    public Asthetic hand=new ProteinGeneAsthetic();
-    public Asthetic eye=new ProteinGeneAsthetic();
-    public Asthetic eyeHumunculous=new ProteinTertiaryStructureAsthetic();
+public class AtomPeerElectronsAsthetic extends BodyRoleSpaceOutsideEdge{
+    public Asthetic handHumunculous;
+    public Asthetic hand;
+    public Asthetic eye;
+    public Asthetic eyeHumunculous;
     
 
     

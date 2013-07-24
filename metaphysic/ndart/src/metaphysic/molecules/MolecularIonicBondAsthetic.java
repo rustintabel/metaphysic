@@ -4,12 +4,12 @@
  */
 package metaphysic.molecules;
 
-import metaphysic.ReproductionAsthetic;
+import metaphysic.*;
 
 /**
  *
  * @author justin
  */
-public class MolecularIonicBondAsthetic extends ReproductionAsthetic{
+public class MolecularIonicBondAsthetic extends Brain{
     
 }

@@ -224,7 +224,7 @@ public class Triangle {
  
      */
  
-    public void setRandTriangleAndPossibleHyperPlanes()
+    public void setRandTriangleAndPossibleHyperPlanes(double heightByWidth)
  
     {
  
@@ -248,7 +248,7 @@ public class Triangle {
  
 	
  
-	        createRandTriangleAtOriginInXYPlane(500.0);
+	        createRandTriangleAtOriginInXYPlane(heightByWidth,500.0);
  
 	        for(int i=1;i<(dimentions-1);i++)
  
@@ -280,25 +280,44 @@ public class Triangle {
  
     
  
-    public void createRandTriangleAtOriginInXYPlane(double maxCoordinate)
+    public void createRandTriangleAtOriginInXYPlane(double heightByWidth,double maxCoordinate)
  
     {
  
         setRandomColor();
  
-        for(int i=0;i<numVerticies;i++)
+        
+        
+        
+            points[0]=new Point(dimentions);
  
-        {
+            points[0].setAsOrigin();
  
-            points[i]=new Point(dimentions);
+            points[0].setCoordinate(0, 0);
  
-            points[i].setAsOrigin();
+            points[0].setCoordinate(1, 0);
+            
+            
+     
+            points[1]=new Point(dimentions);
  
-            points[i].setCoordinate(0, Math.random()*maxCoordinate);
+            points[1].setAsOrigin();
  
-            points[i].setCoordinate(1, Math.random()*maxCoordinate);
+            points[1].setCoordinate(0, Math.random()*maxCoordinate);
  
-        }
+            points[1].setCoordinate(1, 0);
+            
+            
+            
+            points[2]=new Point(dimentions);
+ 
+            points[2].setAsOrigin();
+ 
+            points[2].setCoordinate(0, 0);
+ 
+            points[2].setCoordinate(1, points[1].getCoordinate(0)*heightByWidth);
+            
+            
  
         numPointsAdded=numVerticies;
  
@@ -544,24 +563,27 @@ public class Triangle {
  
     }
  
-    public void orientToEquitorialPlane(boolean[] zzzzza,java.awt.Image image)
+    public void orientToEquitorialPlane(int planeDimention,boolean[] zzzzza,java.awt.Image image)
     {
         this.image=image;
         for(int i=0;i<dimentions;i++)
         {
             if(zzzzza[i]==true)
             {
-                points[0].coordinates[i]=points[0].coordinates[i];
-                points[1].coordinates[i]=points[1].coordinates[i];
-                points[2].coordinates[i]=points[2].coordinates[i];
+                points[0].coordinates[i]=Math.abs(points[0].coordinates[i]);
+                points[1].coordinates[i]=Math.abs(points[1].coordinates[i]);
+                points[2].coordinates[i]=Math.abs(points[2].coordinates[i]);
             }
             else
             {
-                points[0].coordinates[i]=0;
-                points[1].coordinates[i]=0;
-                points[2].coordinates[i]=0;
+                points[0].coordinates[i]=-1*Math.abs(points[0].coordinates[i]);
+                points[1].coordinates[i]=-1*Math.abs(points[1].coordinates[i]);
+                points[2].coordinates[i]=-1*Math.abs(points[2].coordinates[i]);
             }
         }
+        points[0].coordinates[planeDimention]=0;
+        points[1].coordinates[planeDimention]=0;
+        points[2].coordinates[planeDimention]=0;
     }
     
     public void orientToQuadrant(boolean[] zzzzza,java.awt.Image image)

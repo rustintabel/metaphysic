@@ -113,14 +113,16 @@ public class Viewer {
         int[] x=new int[3];
  
         int[] y=new int[3];
- 
+        Point p=t.getPoint(0);
+        Point pp=orthogonalProjectPoint(p);
+            
         for(int i=0;i<t.getNumPointsSet();i++)
  
         {
  
-            Point p=t.getPoint(i);
+            p=t.getPoint(i);
 
-            Point pp=orthogonalProjectPoint(p);
+            pp=orthogonalProjectPoint(p);
 
             //Point pp=perspectiveProjectPoint(p);
 
@@ -137,12 +139,15 @@ public class Viewer {
         
         if(t.image!=null)
         {
-            AffineTransform translate=new AffineTransform();
-           translate.setToTranslation(x[0],y[0] );
+           AffineTransform translate=new AffineTransform();
+           AffineTransform rotate=new AffineTransform();
+           translate.setToTranslation((int)(pp).getCoordinate(0)+(screenWidth/2),
+                   (int)(pp).getCoordinate(1)+(screenHeight/2) );
            Point base=t.getPoint(2).minus(t.getPoint(0));
            Point hypotenuse=t.getPoint(1).minus(t.getPoint(0));
            //rotate by anglle between hypotennuus and base
-           //translate=AffineTransform.getRotateInstance(base.coordinates[0], base.coordinates[1]);
+           rotate=AffineTransform.getRotateInstance(base.coordinates[0], base.coordinates[1]);
+           //getRotateInstance(double theta, double anchorx, double anchory) 
            AffineTransform scale=new AffineTransform();
            //scale.setToScale
              //      (t.getPoint(1).minus(t.getPoint(0)).coordinates[0], 
@@ -153,7 +158,8 @@ public class Viewer {
                    1/(t.getPoint(1).coordinates[1]-t.getPoint(0).coordinates[1]));
            
            //translate.concatenate(scale);
-           //scale.concatenate(translate);
+           scale.concatenate(translate);
+           scale.concatenate(rotate);
            //t.image.getScaledInstance(
            //        (int)(1/Math.abs(t.getPoint(1).coordinates[0]-t.getPoint(0).coordinates[0])),
            //        (int)(1/Math.abs(t.getPoint(1).coordinates[1]-t.getPoint(0).coordinates[1])), 
@@ -161,10 +167,6 @@ public class Viewer {
            
            graphics.drawImage(t.image, scale, null);       
         }
-
-        
-
- 
     }
  
         public void drawImageFile(ImageFile image)
